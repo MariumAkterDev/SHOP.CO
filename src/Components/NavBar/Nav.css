@@ -9,7 +9,7 @@
     @apply text-[#fff] text-[11px] sm:text-[14px] font-poppins font-normal 
 }
 .headsignUp{
-    @apply text-[#fff] text-[10px] sm:text-[14px] font-poppins font-normal border-b-[1px] border-b-[#fff]
+    @apply text-[#fff] text-[10px] sm:text-[14px] font-poppins font-normal border-b-[1px] border-b-[#fff] hover:brightness-90
 }
 /* ------------------------------------------------Nav----------------------------------------- */
 .NavRow{
@@ -17,7 +17,7 @@
 }
 
 .logoCol .logo{
-    @apply w-[80px] sm:w-[115px] md:w-[130px] lg:w-[160px] cursor-default
+    @apply w-[100px] sm:w-[115px] md:w-[130px] lg:w-[160px] cursor-default
 }
 .navMenuCol{
     @apply hidden sm:block
@@ -66,7 +66,7 @@
     @apply text-[20px] text-brand-Color
 }
 .mobMenu{
-    @apply w-[90%] py-[25px] bg-[#0b240968] absolute top-[68px] transition-all duration-[0.6s]
+    @apply w-[90%] py-[25px] bg-[#0b240968] absolute top-[68px] left-[50%] translate-x-[-50%] transition-all duration-[0.6s]
 }
 .mobMenu ul{
     @apply h-full flex justify-around items-center
