@@ -15,14 +15,15 @@
 .NavRow{
     @apply my-[45px] py-[10px]  px-[24px] bg-secondColor-F0 flex items-center justify-between 
 }
+
 .logoCol .logo{
-    @apply w-[160px]
+    @apply w-[160px] cursor-default
 }
 .navMenuCol ul{
     @apply flex items-center gap-3 
 }
 .navMenuCol ul li {
-    @apply leading-[50px] px-[10px] text-center text-brand-Color text-[20px] font-poppins font-medium hover:bg-brand-Color hover:text-[#fff]
+    @apply leading-[50px] px-[10px] text-center text-brand-Color text-[20px] font-poppins font-medium hover:bg-brand-Color hover:text-[#fff] transition-all duration-[0.2s]
 }
 /* ------------------------------------------------Nav Icons---------------------------------------- */
 .menuIcon{

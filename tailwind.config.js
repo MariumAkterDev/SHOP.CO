@@ -10,11 +10,13 @@ export default {
     },
     fontFamily: {
       'poppins': ['Poppins', 'serif'],
+      'poltawski': ['Poltawski Nowy', 'serif'],
 
     },
     extend: {
       colors: {
         'brand-Color': '#18443F',
+        'PrimaryColor-62': '#1E3E62',
         'secondColor-F0': '#F0F0F0',
       },
     },

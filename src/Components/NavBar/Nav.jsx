@@ -23,7 +23,7 @@ const Nav = () => {
         <div className="container">
           <div className="NavRow">
             <div className="logoCol">
-              <img src={logo} alt="logo" className="logo" />
+              <Link><img src={logo} alt="logo" className="logo" /></Link>
             </div>
             <div className="navMenuCol">
               <ul>
