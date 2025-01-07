@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-import { FaUserCircle } from "react-icons/fa";
-import { FaCartArrowDown } from "react-icons/fa";
-import { CgProfile } from "react-icons/cg";
-import { FaBars } from "react-icons/fa";
+import { FaUserCircle, FaCartArrowDown, FaBars } from "react-icons/fa";
+
 
 const Nav = () => {
   const [show, setShow] = useState(false);
