@@ -75,14 +75,14 @@ const Nav = () => {
                 <Link className="navCartIcon ">
                   <FaCartArrowDown />
                 </Link>
-                {/* -------------------------------NavCartPopUp------------------------ */}
+                {/* -------------------------------NavCartPopUp starts------------------------ */}
                 <div className="navCartPop">
                   <div className="shoppingCart">
                     <p className="shoppingCartP">Shopping Cart</p>
                     <div className="cartBgChild"></div>
                   </div>
                 </div>
-                {/* -------------------------------NavCartPopUp------------------------ */}
+                {/* -------------------------------NavCartPopUp Ends------------------------ */}
                 <div className="navCartBadge">
                   <h6>0</h6>
                 </div>
@@ -92,14 +92,14 @@ const Nav = () => {
                 <Link className="navAccountIcon">
                   <FaUserCircle />
                 </Link>
-                {/* -------------------------------NavAccountPopUp------------------------ */}
+                {/* -------------------------------NavAccountPopUp starts------------------------ */}
                 <div className="navAccountPop">
                   <div className="shoppingCart">
                     <p className="shoppingCartP">Account</p>
                     <div className="cartBgChild"></div>
                   </div>
                 </div>
-                {/* -------------------------------NavAccountPopUp------------------------ */}
+                {/* -------------------------------NavAccountPopUp Ends------------------------ */}
               </div>
             </div>
           </div>
