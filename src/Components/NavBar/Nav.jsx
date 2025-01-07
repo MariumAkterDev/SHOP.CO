@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { FaUserCircle } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
+import { FaBars } from "react-icons/fa";
 
 const Nav = () => {
+  const [show, setShow] = useState(false);
+
+  console.log(show);
   return (
     <>
       <div className="NavFull">
@@ -23,8 +27,33 @@ const Nav = () => {
         <div className="container">
           <div className="NavRow">
             <div className="logoCol">
-              <Link><img src={logo} alt="logo" className="logo" /></Link>
+              <Link>
+                <img src={logo} alt="logo" className="logo" />
+              </Link>
             </div>
+            {/* ---------------------Mobile Nav Menu Starts -------- */}
+            <div className="navMobBar">
+              <FaBars className="mobBarIcon" onClick={() => setShow(!show)} />
+              {show && (
+                <div className="mobMenu">
+                  <ul>
+                    <li>
+                      <Link>Shop</Link>
+                    </li>
+                    <li>
+                      <Link>On Sale</Link>
+                    </li>
+                    <li>
+                      <Link>New Arrivals</Link>
+                    </li>
+                    <li>
+                      <Link>Top Selling</Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+            {/* ---------------------Mobile Nav Menu Ends -------- */}
             <div className="navMenuCol">
               <ul>
                 <li>

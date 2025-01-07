@@ -1,33 +1,36 @@
 /* ------------------------------------------------Header----------------------------------------- */
 .headerPart{
-    @apply bg-brand-Color py-[10px]
+    @apply bg-brand-Color py-[4px] sm:py-[10px] w-full
 }
 .headTxt{
-    @apply w-[390px] m-auto  flex justify-between
+    @apply w-full sm:w-[390px] m-auto  flex justify-center gap-[10px] sm:gap-0 sm:justify-between
 }
 .headTxt .headTxtP{
-    @apply text-[#fff] text-[14px] font-poppins font-normal 
+    @apply text-[#fff] text-[11px] sm:text-[14px] font-poppins font-normal 
 }
 .headsignUp{
-    @apply text-[#fff] text-[14px] font-poppins font-normal border-b-[1px] border-b-[#fff]
+    @apply text-[#fff] text-[10px] sm:text-[14px] font-poppins font-normal border-b-[1px] border-b-[#fff]
 }
 /* ------------------------------------------------Nav----------------------------------------- */
 .NavRow{
-    @apply my-[45px] py-[10px]  px-[24px] bg-secondColor-F0 flex items-center justify-between 
+    @apply w-full mb-[14px] sm:my-[45px] pt-[15px] pb-[10px]  sm:py-[10px]  px-[24px] bg-secondColor-F0 flex items-center justify-between 
 }
 
 .logoCol .logo{
-    @apply w-[160px] cursor-default
+    @apply w-[80px] sm:w-[115px] md:w-[130px] lg:w-[160px] cursor-default
+}
+.navMenuCol{
+    @apply hidden sm:block
 }
 .navMenuCol ul{
     @apply flex items-center gap-3 
 }
 .navMenuCol ul li {
-    @apply leading-[50px] px-[10px] text-center text-brand-Color text-[20px] font-poppins font-medium hover:bg-brand-Color hover:text-[#fff] transition-all duration-[0.2s]
+    @apply leading-[50px] px-[10px] text-center text-brand-Color sm:text-[12px] md:text-[16px] lg:text-[20px] font-poppins font-medium hover:bg-brand-Color hover:text-[#fff] transition-all duration-[0.2s]
 }
 /* ------------------------------------------------Nav Icons---------------------------------------- */
 .menuIcon{
-    @apply flex items-center gap-[15px] text-brand-Color pr-[40px] text-[25px] relative 
+    @apply flex items-center gap-[15px] text-brand-Color sm:pr-[40px] sm:text-[20px] md:text-[25px] relative 
 }
 
 .shoppingCart{
@@ -43,15 +46,31 @@
     @apply  absolute top-[-47px] left-[-50px] z-[50] hidden
 }
 .navCartMain:hover .navCartPop{
-    @apply block
+    @apply lg:block
 }
 .navAccountPop{
     @apply  absolute top-[-50px] left-[13px] z-[50] hidden
 }
 .navAccountMain:hover .navAccountPop{
-    @apply block
+    @apply lg:block
 }
 /* -----------------------------------Nav Cart Badge----------------------------------------- */
 .navCartBadge h6{
-    @apply bg-[red] w-[23px] h-[23px] rounded-full flex justify-center items-center text-[#fff] text-[14px] font-poppins font-medium absolute top-[-21px] left-[13px]
+    @apply bg-[#f80c0c] w-[18px] h-[18px] sm:w-[23px] sm:h-[23px] rounded-full flex justify-center items-center text-[#fff] text-[11px] sm:text-[14px] font-poppins font-medium absolute top-[-15px] sm:top-[-21px] left-[13px]
+}
+/* ----------------------------------------Nav Mobile Bar------------------------------ */
+.navMobBar{
+    @apply  sm:hidden w-full flex justify-center items-center overflow-hidden
+}
+.mobBarIcon{
+    @apply text-[20px] text-brand-Color
+}
+.mobMenu{
+    @apply w-[90%] h-[80px] bg-[#0b240968] absolute top-[68px] transition-all duration-[0.6s]
+}
+.mobMenu ul{
+    @apply h-full flex justify-around items-center
+}
+.mobMenu ul li{
+    @apply text-[#370d0d] font-semibold
 }
