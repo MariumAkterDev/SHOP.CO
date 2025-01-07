@@ -8,7 +8,16 @@ export default {
     container: {
       center: true,
     },
-    extend: {},
+    fontFamily: {
+      'poppins': ['Poppins', 'serif'],
+
+    },
+    extend: {
+      colors: {
+        'brand-Color': '#18443F',
+        'secondColor-F0': '#F0F0F0',
+      },
+    },
     
   },
   plugins: [],

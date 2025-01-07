@@ -9,12 +9,12 @@ import Footer from '../Components/Footer/Footer'
 const HomePage = () => {
   return (
     <>
-      <Banner/>
-      <New/>
-      <Top/>
-      <Browse/>
-      <Review/>
-      <Footer/>
+      {/* <Banner/> */}
+      {/* <New/> */}
+      {/* <Top/> */}
+      {/* <Browse/> */}
+      {/* <Review/> */}
+      {/* <Footer/> */}
     </>
   )
 }
