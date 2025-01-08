@@ -1,24 +1,30 @@
 .Footer{
-    @apply pt-[140px] pb-[87px] bg-secondColor-F0 mt-[-100px]
+    @apply pt-[140px] pb-[87px] bg-secondColor-F0 mt-[-55px] sm:mt-[-70px] lg:mt-[-100px] 
 }
 /* -----------------------------------------Subscribe Part----------------------------------- */
 .mySubsCont{
-    @apply relative 
+    @apply relative  
 }
 .SubscribePart{
-    @apply px-[64px] py-[44px] bg-brand-Color w-full rounded-[20px] static z-[50] flex items-center justify-between
+    @apply bg-brand-Color m-auto  rounded-[20px] static z-[50] px-[15px] py-[15px] lg:px-[64px] lg:py-[44px] w-fit  lg:w-full  flex flex-col lg:flex-row items-center lg:justify-between gap-[10px] lg:gap-0
 }
 .subsTxtH2{
-    @apply w-[551px] text-[40px] text-[#fff] font-normal font-poltawski
+    @apply w-[200px] sm:w-[297px] lg:w-[551px] text-[14px] sm:text-[18px] lg:text-[40px] text-[#fff] font-normal font-poltawski sm:leading-[25px] lg:leading-[45px] text-center lg:text-left
+}
+.subsInpPart{
+    @apply  flex items-center gap-[10px] sm:relative
 }
 .subs_Inp{
-    @apply w-[550px] h-[60px] rounded-[10px] pl-[20px] pr-[181px] outline-none text-[20px] text-PrimaryColor-62 font-normal caret-PrimaryColor-62
+    @apply w-[200px] h-[30px] sm:w-[350px] sm:h-[40px] lg:w-[550px] lg:h-[60px] rounded-[5px] sm:rounded-[10px] px-[10px] sm:px-0 sm:pl-[20px] sm:pr-[120px] lg:pr-[181px] outline-none text-[12px] sm:text-[14] lg:text-[20px] text-PrimaryColor-62 font-normal caret-PrimaryColor-62
 }
 .subs_Btn{
-    @apply w-[150px] h-[45px] bg-brand-Color absolute right-[20px] top-[50%] translate-y-[-50%] rounded-[8px] text-[#fff] text-[18px] font-poppins font-normal shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] active:shadow-[none]
+    @apply w-[70px] h-[30px] sm:w-[90px] sm:h-[28px] lg:w-[150px] lg:h-[45px] bg-[#fff] sm:bg-brand-Color sm:absolute right-[20px] top-[50%] sm:translate-y-[-50%] rounded-[5px] sm:rounded-[8px] text-brand-Color sm:text-[#fff] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins font-normal lg:shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] active:shadow-[none]
 }
 /* ---------------------------------------Footer Main Part---------------------------------------------- */
 .footerRow1{
+    @apply flex justify-between
+}
+.footerMenuFullCard{
     @apply flex justify-between
 }
 .footerLogo{
