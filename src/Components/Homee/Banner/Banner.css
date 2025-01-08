@@ -7,6 +7,9 @@
 .bannerTxt .bannerTxtP{
     @apply w-[471px] text-[16px] text-lightColor-2C font-normal font-poppins leading-[22px] mt-[32px] mb-[28px]
 }
+.baanerRowOne{
+    @apply flex justify-between
+}
 /* ----------------------------------Banner Count-------------------------------- */
 .bannerCountPart{
     @apply mt-[30px] flex gap-[13px] 
@@ -21,8 +24,10 @@
 .bannerSingleCount .bannerCountP{
     @apply text-[16px] text-lightgray-60% font-normal font-poppins
 }
-
-
+/* -----------------------------------Banner Img---------------------------------- */
+.bannerImgpPart{
+    @apply w-[672px] border-[10px] border-solid border-brand-Color
+}
 
 
 

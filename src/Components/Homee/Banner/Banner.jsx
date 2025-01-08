@@ -2,6 +2,7 @@ import React from 'react'
 import './Banner.css'
 import CommonBtnOne from '../../CommonBtnOne/CommonBtnOne'
 import CountUp from 'react-countup';
+import BannerSlider from '../../BnnerSlider/BannerSlider';
 
 const Banner = () => {
   return (
@@ -9,7 +10,7 @@ const Banner = () => {
       <div className="container">
         <div className="banner_Row">
           {/* -------------------------Banner Row 1------------------------------------ */}
-          <div className="baanerRowOne flex justify-between items-center">
+          <div className="baanerRowOne">
             <div className="bannerTxt ">
               <h1 className='bannerTxtH1'>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
               <p className='bannerTxtP'>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
@@ -34,15 +35,8 @@ const Banner = () => {
 
               </div>
             </div>
-            <div className="bannerImg w-[672px]">
-              <marquee behavior="" direction="left">
-                  <div className='flex'>
-                  <img className='mr-[20px]' src="src/assets/images/banner-1.png" alt="" />
-                  <img className='mr-[20px]' src="src/assets/images/banner-2.png" alt="" />
-                  <img className='mr-[20px]' src="src/assets/images/banner-3.png" alt="" />
-                  <img className='mr-[20px]' src="src/assets/images/banner-4.png" alt="" />
-                  </div>
-              </marquee>
+            <div className="bannerImgpPart">
+              <BannerSlider/>
             </div>
           </div>
           {/* -------------------------Banner Row 2------------------------------------ */}
