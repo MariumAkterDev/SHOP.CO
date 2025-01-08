@@ -1,5 +1,5 @@
 .Footer{
-    @apply pt-[70px] sm:pt-[100px] lg:pt-[140px] pb-[87px] bg-secondColor-F0 mt-[-55px] sm:mt-[-70px] lg:mt-[-100px] 
+    @apply pt-[70px] sm:pt-[100px] lg:pt-[140px] pb-[6px] sm:pb-[15px] lg:pb-[87px] bg-secondColor-F0 mt-[-55px] sm:mt-[-70px] lg:mt-[-100px] 
 }
 /* -----------------------------------------Subscribe Part----------------------------------- */
 .mySubsCont{
@@ -25,41 +25,41 @@
     @apply w-full flex flex-col gap-[20px] lg:gap-0 lg:flex-row items-center lg:items-start lg:justify-between
 }
 .footerMenuFullCard{
-    @apply flex justify-between
+    @apply flex lg:justify-between flex-wrap justify-around gap-[10px] xl:gap-0
 }
 .footerLogo{
     @apply w-[100px] lg:w-[167px] m-auto lg:m-0
 }
 .footerP{
-    @apply w-[300px] lg:w-[248px] text-center lg:text-left text-[12px] lg:text-[14px] text-[#0000009b] font-normal font-poppins leading-[22px] mt-[10px] lg:mt-[25px] mb-[15px] lg:mb-[35px]
+    @apply w-[300px] lg:w-[248px] text-center lg:text-left text-[12px] lg:text-[14px] text-[#0000009b] font-normal font-poppins leading-[22px] my-[10px] lg:mt-[25px] lg:mb-[35px]
 }
 .footer_Icon ul{
-    @apply flex items-center justify-center lg:justify-start gap-[10px]
+    @apply flex items-center justify-center lg:justify-start gap-[10px] 
 }
 .footer_Icon ul li{
-    @apply p-[8px] bg-[#fff] rounded-full shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] text-brand-Color text-[18px] hover:bg-brand-Color hover:text-[#fff] transition-all duration-[0.3s]
+    @apply p-[5px] lg:p-[8px] bg-brand-Color lg:bg-[#fff] rounded-full lg:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] text-[#fff] lg:text-brand-Color text-[10px] lg:text-[18px] hover:bg-brand-Color hover:text-[#fff] transition-all duration-[0.3s]
 }
 /* ---------------------------FooterMenu------------------------------------ */
 .footerMenuItems{
-    @apply flex flex-col gap-[10px] w-[200px]
+    @apply flex flex-col gap-[3px] lg:gap-[10px] w-[120px] lg:w-[200px]
 }
 .footerMenuH2{
-    @apply  text-[16px] text-[#000] font-normal font-poltawski mb-[26px]
+    @apply text-[12px] lg:text-[16px] text-[#000] font-normal font-poltawski mb-[6px] lg:mb-[26px]
 }
 .footerMenuItems .footerSingMenu{
-    @apply text-[16px] text-[#0000009b] font-normal font-poppins hover:text-[#000] hover:font-medium
+    @apply text-[12px] lg:text-[16px] text-[#0000009b] font-normal font-poppins hover:text-[#000] hover:font-medium
 }
 /* -----------------------------------Footer Row 2----------------------------------- */
 .footerRow2{
-    @apply w-[full] h-[1px] bg-[#8e8b8b9b] mt-[50px] mb-[24px]
+    @apply w-[90%] lg:w-full h-[1px] bg-[#a39f9f6c]  lg:bg-[#8e8b8b9b] my-[12px] lg:mt-[50px] lg:mb-[24px] m-auto
 }
 /* -----------------------------------Footer Row 3----------------------------------- */
 .footerRow3{
-    @apply flex flex-col gap-[10px] sm:gap-0 sm:flex-row justify-between items-center
+    @apply w-[90%] m-auto lg:w-full  flex flex-col gap-[4px] sm:gap-0 sm:flex-row justify-between items-center text-[#8e8b8b9b] text-[10px] lg:text-[14px] font-poppins font-normal
 }
 .footerRow3Img {
     @apply flex justify-center items-center
 }
 .footerRow3Img img{
-    @apply w-[46px]
+    @apply w-[38px] sm:w-[46px]
 }
