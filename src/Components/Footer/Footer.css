@@ -1,5 +1,5 @@
 .Footer{
-    @apply pt-[140px] pb-[87px] bg-secondColor-F0 mt-[-55px] sm:mt-[-70px] lg:mt-[-100px] 
+    @apply pt-[70px] sm:pt-[100px] lg:pt-[140px] pb-[87px] bg-secondColor-F0 mt-[-55px] sm:mt-[-70px] lg:mt-[-100px] 
 }
 /* -----------------------------------------Subscribe Part----------------------------------- */
 .mySubsCont{
@@ -22,19 +22,19 @@
 }
 /* ---------------------------------------Footer Main Part---------------------------------------------- */
 .footerRow1{
-    @apply flex justify-between
+    @apply w-full flex flex-col gap-[20px] lg:gap-0 lg:flex-row items-center lg:items-start lg:justify-between
 }
 .footerMenuFullCard{
     @apply flex justify-between
 }
 .footerLogo{
-    @apply w-[167px]
+    @apply w-[100px] lg:w-[167px] m-auto lg:m-0
 }
 .footerP{
-    @apply w-[248px] text-[14px] text-[#0000009b] font-normal font-poppins leading-[22px] mt-[25px] mb-[35px]
+    @apply w-[300px] lg:w-[248px] text-center lg:text-left text-[12px] lg:text-[14px] text-[#0000009b] font-normal font-poppins leading-[22px] mt-[10px] lg:mt-[25px] mb-[15px] lg:mb-[35px]
 }
 .footer_Icon ul{
-    @apply flex items-center gap-[10px]
+    @apply flex items-center justify-center lg:justify-start gap-[10px]
 }
 .footer_Icon ul li{
     @apply p-[8px] bg-[#fff] rounded-full shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] text-brand-Color text-[18px] hover:bg-brand-Color hover:text-[#fff] transition-all duration-[0.3s]
@@ -55,7 +55,7 @@
 }
 /* -----------------------------------Footer Row 3----------------------------------- */
 .footerRow3{
-    @apply flex justify-between items-center
+    @apply flex flex-col gap-[10px] sm:gap-0 sm:flex-row justify-between items-center
 }
 .footerRow3Img {
     @apply flex justify-center items-center
