@@ -18,6 +18,8 @@ export default {
         'brand-Color': '#18443F',
         'PrimaryColor-62': '#1E3E62',
         'secondColor-F0': '#F0F0F0',
+        'lightColor-2C': '#0B192C',
+        'lightgray-60%': '#0000008d',
       },
     },
     
