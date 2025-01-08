@@ -24,11 +24,6 @@ const Nav = () => {
         {/* -------------------------------------Nav----------------------------------------- */}
         <div className="container">
           <div className="NavRow">
-            <div className="logoCol">
-              <Link>
-                <img src={logo} alt="logo" className="logo" />
-              </Link>
-            </div>
             {/* ---------------------Mobile Nav Menu Starts -------- */}
             <div className="navMobBar">
               <FaBars className="mobBarIcon" onClick={() => setShow(!show)} />
@@ -52,6 +47,12 @@ const Nav = () => {
               )}
             </div>
             {/* ---------------------Mobile Nav Menu Ends -------- */}
+            <div className="logoCol">
+              <Link>
+                <img src={logo} alt="logo" className="logo" />
+              </Link>
+            </div>
+            
             <div className="navMenuCol">
               <ul>
                 <li>

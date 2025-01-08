@@ -17,7 +17,7 @@
 }
 
 .logoCol .logo{
-    @apply w-[115px] md:w-[130px] lg:w-[160px] cursor-default
+    @apply w-[100px] md:w-[130px] lg:w-[160px] cursor-default
 }
 .navMenuCol{
     @apply hidden sm:block
@@ -60,7 +60,7 @@
 }
 /* ----------------------------------------Nav Mobile Bar------------------------------ */
 .navMobBar{
-    @apply  sm:hidden w-full flex justify-center items-center overflow-hidden
+    @apply  sm:hidden  flex justify-center items-center overflow-hidden
 }
 .mobBarIcon{
     @apply text-[20px] text-brand-Color
