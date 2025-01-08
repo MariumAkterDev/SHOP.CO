@@ -66,7 +66,7 @@
     @apply text-[20px] text-brand-Color
 }
 .mobMenu{
-    @apply w-[90%] py-[25px] bg-[#0b240968] absolute top-[68px] left-[50%] translate-x-[-50%] transition-all duration-[0.6s]
+    @apply w-[90%] py-[25px] bg-[#0b240968] absolute top-[68px] left-[50%] translate-x-[-50%]  transition-all duration-[0.6s]
 }
 .mobMenu ul{
     @apply h-full flex justify-around items-center
