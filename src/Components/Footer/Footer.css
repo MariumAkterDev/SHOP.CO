@@ -44,7 +44,7 @@
     @apply flex flex-col gap-[3px] lg:gap-[10px] w-[120px] lg:w-[200px]
 }
 .footerMenuH2{
-    @apply text-[12px] lg:text-[16px] text-[#000] font-normal font-poltawski mb-[6px] lg:mb-[26px]
+    @apply text-[12px] lg:text-[16px] text-[#000] font-medium lg:font-normal font-poppins mb-[6px] lg:mb-[26px]
 }
 .footerMenuItems .footerSingMenu{
     @apply text-[12px] lg:text-[16px] text-[#0000009b] font-normal font-poppins hover:text-[#000] hover:font-medium
