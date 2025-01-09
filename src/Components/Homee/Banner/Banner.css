@@ -2,34 +2,34 @@
     @apply pb-[70px]
 }
 .bannerTxt .bannerTxtH1{
-    @apply sm:w-[500px] lg:w-[577px] sm:text-center lg:text-left sm:text-[35px] lg:text-[64px] text-PrimaryColor-62 font-normal font-poltawski   sm:leading-[44px] lg:leading-[64px]
+    @apply w-[271px] sm:w-[500px] lg:w-[577px] text-center lg:text-left text-[22px] sm:text-[35px] lg:text-[64px] text-PrimaryColor-62 font-normal font-poltawski leading-[29px] sm:leading-[44px] lg:leading-[64px] mx-auto sm:mx-0
 }
 .bannerTxt .bannerTxtP{
-    @apply sm:w-[500px] lg:w-[471px] sm:text-center lg:text-left sm:text-[14px]  lg:text-[16px] text-lightColor-2C font-normal font-poppins leading-[22px] sm:mt-[9px] sm:mb-[16px]  lg:mt-[32px] lg:mb-[28px]
+    @apply w-[295px] sm:w-[500px] lg:w-[471px] text-center lg:text-left text-[12px] sm:text-[14px]  lg:text-[16px] text-lightColor-2C font-normal font-poppins leading-[18px] sm:leading-[22px] mt-[9px] mb-[16px] sm:mt-[9px] sm:mb-[16px] lg:mt-[32px] lg:mb-[28px] mx-auto sm:mx-0
 }
 .banner_Row{
-    @apply sm:w-[90%] sm:mx-auto lg:w-full lg:mx-0
+    @apply w-[90%] sm:w-[90%]  mx-auto lg:w-full lg:mx-0
 }
 .baanerRowOne{
-    @apply flex sm:flex-col-reverse sm:gap-[30px] lg:gap-0 lg:flex-row sm:items-center lg:items-start lg:justify-between
+    @apply flex flex-col-reverse lg:flex-row  gap-[30px] sm:gap-[30px] lg:gap-0  items-center lg:items-start  lg:justify-between
 }
 /* ----------------------------------Banner Count-------------------------------- */
 .bannerCountPart{
-    @apply mt-[30px] flex gap-[13px] w-fit  mx-auto lg:mx-0
+    @apply mt-[30px] flex flex-wrap gap-[8px]  sm:gap-[13px] w-[262px] sm:w-fit  mx-auto lg:mx-0
 }
 .bannerSingleCount{
-    @apply  border-r-[1px] border-r-[#0000002a] pr-[13px] 
+    @apply  sm:border-r-[1px] border-r-[#0000002a] pr-[13px]
 }
 
 .bannerSingleCount .bannerCountH2{
-    @apply sm:text-[24px] lg:text-[40px] text-brand-Color font-bold font-poppins 
+    @apply text-[16px] sm:text-[24px] lg:text-[40px] text-brand-Color font-bold font-poppins 
 }
 .bannerSingleCount .bannerCountP{
-    @apply sm:text-[12px] lg:text-[16px] text-lightgray-60% font-normal font-poppins
+    @apply text-[11px] lg:text-[16px] text-lightgray-60% font-normal font-poppins
 }
 /* -----------------------------------Banner Img---------------------------------- */
 .bannerImgpPart{
-    @apply sm:w-[450px] h-fit lg:w-[672px] sm:border-[6px]  lg:border-[10px] border-solid 
+    @apply w-[290px] sm:w-[450px] h-fit lg:w-[672px] sm:border-[6px]  lg:border-[10px] border-solid 
 }
 .bannerImgpPart{
     border-image: linear-gradient(to right, rgba(215, 3, 3, 0.682), rgb(226, 226, 7), rgba(2, 92, 8, 0.721) ) 1;
