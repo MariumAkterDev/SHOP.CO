@@ -2,7 +2,7 @@
     @apply pb-[70px]
 }
 .bannerTxt .bannerTxtH1{
-    @apply w-[271px] sm:w-[500px] lg:w-[577px] text-center lg:text-left text-[22px] sm:text-[35px] lg:text-[64px] text-PrimaryColor-62 font-normal font-poltawski leading-[29px] sm:leading-[44px] lg:leading-[64px] mx-auto sm:mx-0
+    @apply w-[271px] sm:w-[500px] lg:w-[577px] text-center lg:text-left text-[22px] sm:text-[35px] lg:text-[64px] text-PrimaryColor-62 font-medium font-poltawski leading-[29px] sm:leading-[44px] lg:leading-[64px] mx-auto sm:mx-0
 }
 .bannerTxt .bannerTxtP{
     @apply w-[295px] sm:w-[500px] lg:w-[471px] text-center lg:text-left text-[12px] sm:text-[14px]  lg:text-[16px] text-lightColor-2C font-normal font-poppins leading-[18px] sm:leading-[22px] mt-[9px] mb-[16px] sm:mt-[9px] sm:mb-[16px] lg:mt-[32px] lg:mb-[28px] mx-auto sm:mx-0
