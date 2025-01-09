@@ -18,7 +18,7 @@
     @apply w-[200px] h-[30px] sm:w-[350px] sm:h-[40px] lg:w-[550px] lg:h-[60px] rounded-[5px] sm:rounded-[10px] px-[10px] sm:px-0 sm:pl-[20px] sm:pr-[120px] lg:pr-[181px] outline-none text-[12px] sm:text-[14] lg:text-[20px] text-PrimaryColor-62 font-normal caret-PrimaryColor-62
 }
 .subs_Btn{
-    @apply w-[70px] h-[30px] sm:w-[90px] sm:h-[28px] lg:w-[150px] lg:h-[45px] bg-[#fff] sm:bg-brand-Color sm:absolute right-[20px] top-[50%] sm:translate-y-[-50%] rounded-[5px] sm:rounded-[8px] text-brand-Color sm:text-[#fff] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins font-normal lg:shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] active:shadow-[none]
+    @apply w-[70px] h-[30px] sm:w-[90px] sm:h-[28px] lg:w-[150px] lg:h-[45px] bg-[#fff] sm:bg-brand-Color sm:absolute right-[20px] top-[50%] sm:translate-y-[-50%] rounded-[5px] sm:rounded-[8px] text-brand-Color sm:text-[#fff] text-[11px] sm:text-[14px] lg:text-[18px] font-poppins font-semibold lg:shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] transition-all duration-[0.3s] hover:shadow-[none]
 }
 /* ---------------------------------------Footer Main Part---------------------------------------------- */
 .footerRow1{

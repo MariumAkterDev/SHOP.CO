@@ -8,7 +8,6 @@ import { FaUserCircle, FaCartArrowDown, FaBars } from "react-icons/fa";
 const Nav = () => {
   const [show, setShow] = useState(false);
 
-  console.log(show);
   return (
     <>
       <div className="NavFull">

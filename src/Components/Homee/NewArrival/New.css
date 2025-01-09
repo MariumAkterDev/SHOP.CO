@@ -1,0 +1,6 @@
+.NewMother{
+    @apply mt-[70px] mb-[62px]
+}
+.newShow .newShowH2{
+    @apply text-[48px] text-PrimaryColor-62 font-semibold font-poltawski text-center
+}

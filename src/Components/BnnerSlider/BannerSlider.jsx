@@ -7,6 +7,7 @@ import bannerimg1 from '../../assets/images/banner-1.png'
 import bannerimg2 from '../../assets/images/banner-2.png'
 import bannerimg3 from '../../assets/images/banner-3.png'
 import bannerimg4 from '../../assets/images/banner-4.png'
+import bannerimg5 from '../../assets/images/banner-5.png'
 
 const BannerSlider = () => {
     const fadeImages = [
@@ -22,6 +23,9 @@ const BannerSlider = () => {
         {
             url: bannerimg4,
         },
+        {
+            url: bannerimg5,
+        }
     ];
     const properties = {
         duration: 2000,

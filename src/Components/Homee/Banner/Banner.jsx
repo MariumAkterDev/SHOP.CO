@@ -32,15 +32,14 @@ const Banner = () => {
                   <p className="bannerCountP">Happy Customers</p>
                 </div>
                 {/* xxxxxxxxxxxxxxxxxxxxx Banner Single Count xxxxxxxxxxxxxxxxxxxxxxx */}
-
               </div>
             </div>
+            {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Banner left side ends xxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
             <div className="bannerImgpPart">
               <BannerSlider/>
             </div>
           </div>
-          {/* -------------------------Banner Row 2------------------------------------ */}
-          <div className="baanerRowTwo"></div>
+          {/* xxxxxxxxxxxxxxxxxxxxxx Banner row 1 ends xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
         </div>
       </div>
     </div>

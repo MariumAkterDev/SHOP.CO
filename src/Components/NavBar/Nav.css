@@ -13,7 +13,7 @@
 }
 /* ------------------------------------------------Nav----------------------------------------- */
 .NavRow{
-    @apply w-full mb-[14px] sm:mt-[20px] sm:mb-[20px] lg:mt-[30px] lg:mb-[45px] pt-[15px] pb-[10px]  sm:py-[10px]  px-[24px] bg-[#a7d5f624] flex items-center justify-between 
+    @apply w-full  sm:mt-[20px] lg:mt-[30px] lg:mb-[45px] py-[15px]  sm:py-[10px]  px-[24px] lg:bg-[#a7d5f624] flex items-center justify-between 
 }
 
 .logoCol .logo{
@@ -66,10 +66,10 @@
     @apply text-[20px] text-brand-Color
 }
 .mobMenu{
-    @apply w-[90%] py-[25px] bg-[#555454] absolute top-[68px] left-[50%] translate-x-[-50%]  transition-all duration-[0.6s] z-[100]
+    @apply w-[100%] py-[25px] bg-[#555454] absolute top-[74px] left-[50%] translate-x-[-50%]  transition-all duration-[0.6s] z-[100]
 }
 .mobMenu ul{
-    @apply h-full flex justify-around items-center
+    @apply w-[90%] h-full mx-auto flex justify-around items-center
 }
 .mobMenu ul li{
     @apply text-[#fff] font-semibold font-poppins text-[14px]
