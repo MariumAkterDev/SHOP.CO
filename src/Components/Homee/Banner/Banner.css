@@ -29,10 +29,10 @@
 }
 /* -----------------------------------Banner Img---------------------------------- */
 .bannerImgpPart{
-    @apply w-[290px] sm:w-[450px] h-fit lg:w-[672px] border-[3px] sm:border-[6px]  lg:border-[10px] border-solid 
+    @apply w-[290px] sm:w-[450px] h-fit lg:w-[672px] border-[4px] sm:border-[6px]  lg:border-[10px] border-solid 
 }
 .bannerImgpPart{
-    border-image: linear-gradient(to right, rgba(215, 3, 3, 0.682), rgb(226, 226, 7), rgba(2, 92, 8, 0.721) ) 1;
+    border-image: linear-gradient(to right, rgba(167, 213, 246, 0.748), rgba(37, 37, 37, 0.792), rgba(42, 41, 41, 0.819) ) 1;
 }
 
 
