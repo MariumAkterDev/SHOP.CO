@@ -29,7 +29,7 @@
 }
 /* -----------------------------------Banner Img---------------------------------- */
 .bannerImgpPart{
-    @apply sm:w-[320px] h-fit lg:w-[672px]  border-[10px] border-solid 
+    @apply sm:w-[450px] h-fit lg:w-[672px] sm:border-[6px]  lg:border-[10px] border-solid 
 }
 .bannerImgpPart{
     border-image: linear-gradient(to right, rgba(215, 3, 3, 0.682), rgb(226, 226, 7), rgba(2, 92, 8, 0.721) ) 1;
