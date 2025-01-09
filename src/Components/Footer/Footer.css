@@ -1,5 +1,5 @@
 .Footer{
-    @apply pt-[70px] sm:pt-[100px] lg:pt-[140px] pb-[70px] sm:pb-[77px] lg:pb-[87px] bg-secondColor-F0 mt-[-55px]  sm:mt-[-70px] lg:mt-[-100px]
+    @apply pt-[70px] sm:pt-[100px] lg:pt-[140px] pb-[70px] sm:pb-[77px] lg:pb-[87px] bg-secondColor-F0 mt-[-55px]  sm:mt-[-70px] lg:mt-[-90px]
 }
 /* -----------------------------------------Subscribe Part----------------------------------- */
 .mySubsCont{

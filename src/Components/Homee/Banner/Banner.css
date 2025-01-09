@@ -32,7 +32,7 @@
     @apply w-[290px] sm:w-[450px] h-fit lg:w-[672px] border-[4px] sm:border-[6px]  lg:border-[10px] border-solid 
 }
 .bannerImgpPart{
-    border-image: linear-gradient(to right, rgba(167, 213, 246, 0.748), rgba(37, 37, 37, 0.792), rgba(42, 41, 41, 0.819) ) 1;
+    border-image: linear-gradient(to right, #a7d5f6bf, #252525ca, #2a2929d1 ) 1;
 }
 
 

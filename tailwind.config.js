@@ -16,9 +16,11 @@ export default {
     extend: {
       colors: {
         'brand-Color': '#18443F',
-        'PrimaryColor-62': '#1E3E62',
+        // 'PrimaryColor-62': '#1E3E62',
+        'PrimaryColor-62': '#A21232',
         'secondColor-F0': '#F0F0F0',
-        'lightColor-2C': '#0B192C',
+        'lightColor-2C': '#252525ca',
+        // 'lightColor-2C': '#0B192C',
         'lightgray-60%': '#0000008d',
       },
     },

@@ -13,7 +13,7 @@
 }
 /* ------------------------------------------------Nav----------------------------------------- */
 .NavRow{
-    @apply w-full mb-[14px] sm:mt-[20px] sm:mb-[20px] lg:my-[45px] pt-[15px] pb-[10px]  sm:py-[10px]  px-[24px] bg-secondColor-F0 flex items-center justify-between 
+    @apply w-full mb-[14px] sm:mt-[20px] sm:mb-[20px] lg:mt-[30px] lg:mb-[45px] pt-[15px] pb-[10px]  sm:py-[10px]  px-[24px] bg-[#a7d5f624] flex items-center justify-between 
 }
 
 .logoCol .logo{
