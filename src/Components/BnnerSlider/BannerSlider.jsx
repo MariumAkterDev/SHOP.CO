@@ -38,7 +38,7 @@ const BannerSlider = () => {
                 <Fade {...properties}>
                     {fadeImages.map((fadeImage, index) => (
                         <div key={index}>
-                            <img style={{ width: '100%' }} src={fadeImage.url} />
+                            <img style={{ width: '100%'}} src={fadeImage.url} />
                             <h2>{fadeImage.caption}</h2>
                         </div>
                     ))}

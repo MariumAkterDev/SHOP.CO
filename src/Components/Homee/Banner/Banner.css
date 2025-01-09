@@ -2,33 +2,38 @@
     @apply pb-[70px]
 }
 .bannerTxt .bannerTxtH1{
-    @apply w-[577px] text-[64px] text-PrimaryColor-62 font-normal font-poltawski leading-[64px]
+    @apply sm:w-[500px] lg:w-[577px] sm:text-center lg:text-left sm:text-[35px] lg:text-[64px] text-PrimaryColor-62 font-normal font-poltawski   sm:leading-[44px] lg:leading-[64px]
 }
 .bannerTxt .bannerTxtP{
-    @apply w-[471px] text-[16px] text-lightColor-2C font-normal font-poppins leading-[22px] mt-[32px] mb-[28px]
+    @apply sm:w-[500px] lg:w-[471px] sm:text-center lg:text-left sm:text-[14px]  lg:text-[16px] text-lightColor-2C font-normal font-poppins leading-[22px] sm:mt-[9px] sm:mb-[16px]  lg:mt-[32px] lg:mb-[28px]
+}
+.banner_Row{
+    @apply sm:w-[90%] sm:mx-auto lg:w-full lg:mx-0
 }
 .baanerRowOne{
-    @apply flex justify-between
+    @apply flex sm:flex-col-reverse sm:gap-[30px] lg:gap-0 lg:flex-row sm:items-center lg:items-start lg:justify-between
 }
 /* ----------------------------------Banner Count-------------------------------- */
 .bannerCountPart{
-    @apply mt-[30px] flex gap-[13px] 
+    @apply mt-[30px] flex gap-[13px] w-fit  mx-auto lg:mx-0
 }
 .bannerSingleCount{
-    @apply  border-r-[1px] border-r-[#0000002a] pr-[13px]
+    @apply  border-r-[1px] border-r-[#0000002a] pr-[13px] 
 }
 
 .bannerSingleCount .bannerCountH2{
-    @apply text-[40px] text-brand-Color font-bold font-poppins
+    @apply sm:text-[24px] lg:text-[40px] text-brand-Color font-bold font-poppins 
 }
 .bannerSingleCount .bannerCountP{
-    @apply text-[16px] text-lightgray-60% font-normal font-poppins
+    @apply sm:text-[12px] lg:text-[16px] text-lightgray-60% font-normal font-poppins
 }
 /* -----------------------------------Banner Img---------------------------------- */
 .bannerImgpPart{
-    @apply w-[672px] border-[10px] border-solid border-brand-Color
+    @apply sm:w-[320px] h-fit lg:w-[672px]  border-[10px] border-solid 
 }
-
+.bannerImgpPart{
+    border-image: linear-gradient(to right, rgba(215, 3, 3, 0.682), rgb(226, 226, 7), rgba(2, 92, 8, 0.721) ) 1;
+}
 
 
 
