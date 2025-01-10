@@ -17,7 +17,7 @@
     @apply border-[1px] border-[#e9e4e4]
 }
 .commonDiv{
-    @apply  w-full h-full bg-[#2d2e2d7a] lg:bg-none lg:hover:bg-[#2d2e2d7a]
+    @apply  w-full h-full bg-[#2d2e2d7a] lg:bg-[#2d2e2d00] lg:hover:bg-[#2d2e2d7a]
 }
 .browseBtn{
     @apply text-PrimaryColor-62 text-[12px] sm:text-[16px] lg:text-[22px] font-medium font-poppins bg-[#f5d11d] px-[10px] py-[5px] lg:py-[4px] rounded-br-[4px]
