@@ -15,10 +15,10 @@ const Top = () => {
           <div className="topShow">
             <h2 className='Title text-center'>TOP SELLING</h2>
             <div className="Topproduct_Row">
-              <SingleProduct prdctImg={top1} productName={'COURAGE GRAPHIC T-SHIRT'} latestPrice={'212'} oldPrice={'$232'} discount={'-20%'} />
-              <SingleProduct prdctImg={top2} productName={'LOOSE FIT BERMUDA SHORTS'} latestPrice={'145'} />
-              <SingleProduct prdctImg={top3} productName={'VERTICAL STRIPED SHIRT'} latestPrice={'80'} oldPrice={'$150'} discount={'-15%'} />
-              <SingleProduct prdctImg={top4} productName={'FADED SKINNY JEANS'} latestPrice={'210'} />
+              <SingleProduct prdctImg={top1} productName={'COURAGE GRAPHIC'} latestPrice={'212'} oldPrice={'$232'} discount={'-20%'} />
+              <SingleProduct prdctImg={top2} productName={'BERMUDA SHORTS'} latestPrice={'145'} />
+              <SingleProduct prdctImg={top3} productName={'STRIPED SHIRT'} latestPrice={'80'} oldPrice={'$150'} discount={'-15%'} />
+              <SingleProduct prdctImg={top4} productName={'SKINNY JEANS'} latestPrice={'210'} />
             </div>
             <div className="top_Btn">
               {/* <CommonBtnOne btn1Contnt={'View All'} design={'!bg-[#fff] !text-[#18443F]'} hovereffect={'hover:bg-[#18443F] hover:text-[#fff]'}  linkAdd={'https://www.facebook.com/'}/> */}

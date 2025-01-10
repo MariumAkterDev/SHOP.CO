@@ -1,8 +1,8 @@
 .singProductCard{
-    @apply w-[198px] lg:w-[295px] mx-auto lg:mx-0 overflow-hidden
+    @apply w-[141px] lg:w-[295px] sm:mx-auto lg:mx-0 overflow-hidden
 }
 .signlPrdctImg{
-    @apply w-full h-[200px] lg:w-full lg:h-[298px] rounded-[20px]
+    @apply w-full h-[150px] lg:w-full lg:h-[298px] rounded-[20px]
 }
 .prodtName{
     @apply text-[#000] text-[14px] lg:text-[18px] font-poppins font-semibold mt-[14px] text-center
@@ -12,7 +12,7 @@
     @apply flex items-center justify-between
 }
 .star ul{
-    @apply flex gap-[5px] mt-[7px] mb-[9px] text-[14px] sm:text-[16px] lg:text-[18px] text-yellow33
+    @apply flex gap-[5px] mt-[7px] mb-[9px] text-[12px] sm:text-[16px] lg:text-[18px] text-yellow33
 }
 .starP{
     @apply text-lightgray-60% text-[14px] font-poppins font-normal

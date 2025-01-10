@@ -2,7 +2,7 @@
     @apply pt-[30px] lg:pt-[70px] pb-[36px] sm:pb-[45px] lg:pb-[62px]
 }
 .product_Row{
-    @apply  flex justify-between flex-wrap gap-[26px] sm:gap-[46px] lg:gap-0 mt-[18px] sm:mt-[28px] lg:mt-[53px] mb-[26px] sm:mb-[32px]
+    @apply  flex justify-center sm:justify-between flex-wrap gap-[10px] gap-y-[30px] sm:gap-[46px] lg:gap-0 mt-[18px] sm:mt-[28px] lg:mt-[53px] mb-[26px] sm:mb-[32px]
 }
 .new_Btn{
     @apply w-full flex justify-center mb-[40px] lg:mb-[64px]

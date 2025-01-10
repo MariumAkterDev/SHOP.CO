@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className="Banner">
       <div className="container">
-        <div className="banner_Row ">
+        <div className="banner_Row">
           {/* -------------------------Banner Row 1------------------------------------ */}
           <div className="baanerRowOne">
             <div className="bannerTxt ">
