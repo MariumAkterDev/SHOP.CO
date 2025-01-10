@@ -1,15 +1,18 @@
 .singProductCard{
-    @apply w-[295px] overflow-hidden
+    @apply w-[198px] lg:w-[295px] mx-auto lg:mx-0 overflow-hidden
+}
+.signlPrdctImg{
+    @apply w-full h-[200px] lg:w-full lg:h-[298px] rounded-[20px]
 }
 .prodtName{
-    @apply text-[#000] text-[18px] font-poppins font-semibold mt-[14px] text-center
+    @apply text-[#000] text-[14px] lg:text-[18px] font-poppins font-semibold mt-[14px] text-center
 }
 /* ----------------------star part---------------------------- */
 .star{
     @apply flex items-center justify-between
 }
 .star ul{
-    @apply flex gap-[5px] mt-[7px] mb-[9px] text-yellow33
+    @apply flex gap-[5px] mt-[7px] mb-[9px] text-[14px] sm:text-[16px] lg:text-[18px] text-yellow33
 }
 .starP{
     @apply text-lightgray-60% text-[14px] font-poppins font-normal
@@ -22,16 +25,16 @@
     @apply flex justify-between
 }
 .prodtPriceH3{
-    @apply text-[#000] text-[22px] font-poppins font-semibold
+    @apply text-[#000] text-[16px] md:text-[20px] lg:text-[22px] font-poppins font-semibold
 }
 .prodtOldPrice{
     @apply flex items-center gap-[10px]
 }
 .prodtOldPriceH3{
-    @apply text-lightgray-40% text-[22px] font-poppins font-semibold line-through
+    @apply text-lightgray-40% text-[16px] md:text-[20px] lg:text-[22px] font-poppins font-semibold line-through
 }
 .prodtOldPriceH4{
-    @apply px-[12px] py-[4px] bg-red-10% rounded-[62px] text-[#FF3333] text-[12px] font-poppins font-medium 
+    @apply px-[8px] py-[2px] md:px-[12px] md:py-[4px] bg-red-10% rounded-[62px] text-[#FF3333] text-[10px] md:text-[12px] font-poppins font-medium 
 }
 
 

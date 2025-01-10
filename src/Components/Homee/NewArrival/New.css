@@ -1,6 +1,24 @@
 .NewMother{
-    @apply mt-[70px] mb-[62px]
+    @apply pt-[30px] lg:pt-[70px] pb-[36px] lg:pb-[62px]
 }
-.newShow .newShowH2{
-    @apply text-[48px] text-PrimaryColor-62 font-semibold font-poltawski text-center
+.product_Row{
+    @apply  flex justify-between flex-wrap gap-[26px] sm:gap-[46px] lg:gap-0 mt-[18px] sm:mt-[28px] lg:mt-[53px] mb-[26px] sm:mb-[32px]
 }
+.new_Btn{
+    @apply w-full flex justify-center mb-[64px]
+}
+.newPartBtom{
+    @apply w-full h-[1px] bg-lightgray-40%
+}
+
+
+
+
+
+
+
+
+
+
+
+

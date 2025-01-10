@@ -16,7 +16,7 @@ const HomePage = () => {
       {/* <Top/> */}
       {/* <Browse/> */}
       {/* <Review/> */}
-      {/* <Footer/> */}
+      {/* <Footer/>  */}
     </>
   )
 }

@@ -1,3 +1,4 @@
 .commonBtn1{
-    @apply px-[25px] lg:px-[65px] py-[8px] lg:py-[14px] rounded-[62px] bg-brand-Color text-[#fff] text-[16px] sm:text-[16px] font-semibold font-poppins transition-all duration-[0.2s] border-[2px] border-brand-Color hover:bg-[#fff] hover:text-brand-Color ml-[50%] translate-x-[-50%] lg:ml-[0] lg:translate-x-[0%]
+    @apply px-[25px] lg:px-[65px] py-[8px] lg:py-[14px] rounded-[62px] bg-brand-Color text-[#fff] text-[16px] sm:text-[16px] font-semibold font-poppins hover:bg-[#fff] hover:text-brand-Color transition-all duration-[0.2s] border-[2px] border-brand-Color  ml-[50%] translate-x-[-50%] lg:ml-[0] lg:translate-x-[0%]
 }
+/*   */

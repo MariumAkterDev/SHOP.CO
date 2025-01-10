@@ -1,12 +1,12 @@
 import React from 'react'
 import './SingleProduct.css'
 import { FaStar } from "react-icons/fa";
-import product1 from '../../assets/images/prodt1.png'
 
-const SingleProduct = () => {
+
+const SingleProduct = ({prdctImg, }) => {
   return (
     <div className='singProductCard'>
-        <img src={product1} alt="" />
+        <img src={prdctImg} alt="" className='signlPrdctImg' />
         <h4 className='prodtName'>T-SHIRT WITH TAPE DETAILS</h4>
         <div className="star">
             <ul>
