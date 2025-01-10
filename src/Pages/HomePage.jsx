@@ -13,10 +13,10 @@ const HomePage = () => {
       <Banner/>
       <Companies/>
       <New/>
-      {/* <Top/> */}
-      {/* <Browse/> */}
-      {/* <Review/> */}
-      {/* <Footer/>  */}
+      <Top/>
+      <Browse/>
+      <Review/>
+      <Footer/> 
     </>
   )
 }

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .Title{
-     @apply text-[28px] sm:text-[32px] lg:text-[48px] text-PrimaryColor-62 font-semibold font-poltawski
+     @apply text-[20px] sm:text-[32px] lg:text-[48px] text-PrimaryColor-62 font-semibold font-poltawski leading-[36px]
 }

@@ -1,0 +1,9 @@
+.TopMother{
+    @apply pb-[40px] sm:pb-[45px] lg:pb-[64px]
+}
+.Topproduct_Row{
+    @apply  flex justify-between flex-wrap gap-[26px] sm:gap-[46px] lg:gap-0 mt-[18px] sm:mt-[28px] lg:mt-[53px] mb-[26px] sm:mb-[32px]
+}
+.top_Btn{
+    @apply w-full flex justify-center 
+}

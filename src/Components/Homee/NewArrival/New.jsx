@@ -16,10 +16,10 @@ const New = () => {
           <div className="newShow">
             <h2 className='Title text-center'>NEW ARRIVALS</h2>
             <div className="product_Row">
-              <SingleProduct prdctImg={product1}/>
-              <SingleProduct prdctImg={product2}/>
-              <SingleProduct prdctImg={product3}/>
-              <SingleProduct prdctImg={product4}/>
+              <SingleProduct prdctImg={product1} productName={'T-SHIRT WITH TAPE DETAILS'} latestPrice={'240'} />
+              <SingleProduct prdctImg={product2} productName={'SKINNY FIT JEANS'} latestPrice={'350'} />
+              <SingleProduct prdctImg={product3} productName={'CHECKERED SHIRT'} latestPrice={'180'} />
+              <SingleProduct prdctImg={product4} productName={'SLEEVE STRIPED T-SHIRT'} latestPrice={'220'} />
             </div>
             <div className="new_Btn">
               {/* <CommonBtnOne btn1Contnt={'View All'} design={'!bg-[#fff] !text-[#18443F]'} hovereffect={'hover:bg-[#18443F] hover:text-[#fff]'}  linkAdd={'https://www.facebook.com/'}/> */}

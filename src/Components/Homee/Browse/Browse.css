@@ -1,0 +1,30 @@
+.BrowseSection{
+    @apply pb-[46px] sm:pb-[70px] lg:pb-[154px]
+}
+.browseH2{
+    @apply mx-auto text-center w-[246px] sm:w-full mb-[18px] sm:mb-[34px] lg:mb-[61px]
+}
+.browseImgMenu{
+    @apply flex flex-wrap justify-center items-center gap-[10px]
+}
+.browseMenu1{
+    @apply w-[268px] h-[207px] sm:w-[268px] sm:h-[268px] lg:w-[407px] lg:h-[289px] bg-[#ded1d1]
+}
+.browseMenu2{
+    @apply w-[266px] h-[268px] lg:w-[684px] lg:h-[289px] bg-[#ded1d1]
+}
+.browseMen{
+    @apply border-[1px] border-[#e9e4e4]
+}
+.commonDiv{
+    @apply  w-full h-full bg-[#2d2e2d7a] lg:bg-none lg:hover:bg-[#2d2e2d7a]
+}
+.browseBtn{
+    @apply text-PrimaryColor-62 text-[12px] sm:text-[16px] lg:text-[22px] font-medium font-poppins bg-[#f5d11d] px-[10px] py-[5px] lg:py-[4px] rounded-br-[4px]
+}
+
+
+
+
+
+

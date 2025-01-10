@@ -14,7 +14,9 @@ const Banner = () => {
             <div className="bannerTxt ">
               <h1 className='bannerTxtH1'>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
               <p className='bannerTxtP'>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+              <div className='bannerBtn'>
               <CommonBtnOne btn1Contnt={'Shop Now'} linkAdd={'https://www.facebook.com/'} hovereffect={'hover:bg-[#fff] hover:text-[#18443F]'}/>
+              </div>
               <div className="bannerCountPart">
                 {/* ----------------------Banner Single Count-------------------------------------- */}
                 <div className="bannerSingleCount">

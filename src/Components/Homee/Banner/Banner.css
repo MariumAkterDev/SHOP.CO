@@ -12,6 +12,9 @@
 .baanerRowOne{
     @apply flex flex-col-reverse lg:flex-row  gap-[30px] sm:gap-[30px] lg:gap-0  items-center lg:items-start  lg:justify-between
 }
+.bannerBtn{
+    @apply  flex justify-center lg:justify-start
+}
 /* ----------------------------------Banner Count-------------------------------- */
 .bannerCountPart{
     @apply mt-[30px] flex flex-wrap gap-[8px]  sm:gap-[13px] w-[262px] sm:w-fit  mx-auto lg:mx-0

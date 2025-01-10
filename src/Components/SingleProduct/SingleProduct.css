@@ -34,7 +34,7 @@
     @apply text-lightgray-40% text-[16px] md:text-[20px] lg:text-[22px] font-poppins font-semibold line-through
 }
 .prodtOldPriceH4{
-    @apply px-[8px] py-[2px] md:px-[12px] md:py-[4px] bg-red-10% rounded-[62px] text-[#FF3333] text-[10px] md:text-[12px] font-poppins font-medium 
+    @apply px-[8px] py-[2px] md:px-[12px] md:py-[4px]  rounded-[62px] text-[#FF3333] text-[14px] md:text-[16px] font-poppins font-medium 
 }
 
 
