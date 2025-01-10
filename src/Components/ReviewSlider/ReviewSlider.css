@@ -1,6 +1,9 @@
 .myReviewSlider{
     @apply relative
 }
+.myReviewSlider .slick-slider  .slick-dots{
+    @apply !hidden
+}
 .myReviewSlider .slick-dots button{
     @apply text-[0px]
 }
