@@ -1,5 +1,5 @@
 .BrowseSection{
-    @apply pb-[46px] sm:pb-[70px] lg:pb-[154px]
+    @apply pb-[56px] sm:pb-[70px] lg:pb-[100px]
 }
 .browseH2{
     @apply mx-auto text-center w-[246px] sm:w-full mb-[18px] sm:mb-[34px] lg:mb-[61px]

@@ -1,0 +1,12 @@
+.myReviewSlider{
+    @apply relative
+}
+.myReviewSlider .slick-dots button{
+    @apply text-[0px]
+}
+.myReviewSlider .slick-arrow{
+    @apply text-[24px] sm:text-[33px] p-[2px] text-[#fff] bg-brand-Color border-[1px] border-brand-Color rounded-full absolute top-[-27px] sm:top-[-74px] right-[34px] hover:bg-[#fff] hover:text-brand-Color transition-all duration-[0.3s]
+}
+.myReviewSlider .slick-arrow.slick-prev{
+    @apply right-[89px]
+}

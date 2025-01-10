@@ -1,0 +1,6 @@
+.reviewSinglCard{
+    @apply px-[32px] py-[28px] bg-[#fff] rounded-[20px] border-[1px] border-[#80808039] shadow-[0_3px_10px_rgb(0,0,0,0.2)] m-[30px]
+}
+.reviewSinglCard img{
+    @apply w-[246px]  lg:w-[336px]
+}

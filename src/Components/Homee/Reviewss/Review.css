@@ -1,0 +1,6 @@
+.ReviewSection{
+    @apply pb-[80px]
+}
+.reviewRowH2{
+    @apply w-[206px] leading-[30px] sm:w-full sm:mb-[38px] lg:mb-[38px] pl-[30px]
+}
