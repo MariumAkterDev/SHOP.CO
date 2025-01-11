@@ -10,7 +10,7 @@ import CommonBtnTwo from '../../CommonBtnTwo/CommonBtnTwo'
 const Top = () => {
   return (
     <>
-      <div className="TopMother">
+      <section className="TopMother">
         <div className="container">
           <div className="topShow">
             <h2 className='Title text-center'>TOP SELLING</h2>
@@ -26,7 +26,7 @@ const Top = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

@@ -9,7 +9,7 @@ import company5 from '../../../assets/images/company5.png'
 const Companies = () => {
   return (
     <>
-        <div className="CompanyLogo">
+        <section className="CompanyLogo">
             <div className="container">
                 <div className="companyRow">
                     
@@ -21,7 +21,7 @@ const Companies = () => {
                     
                 </div>
             </div>
-        </div>
+        </section>
     </>
   )
 }

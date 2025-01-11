@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Browse = () => {
   return (
     <>
-      <div className="BrowseSection">
+      <section className="BrowseSection">
         <div className="container">
           <h2 className="browseH2 Title">BROWSE BY DRESS STYLE</h2>
           <div className="browseImgMenu">
@@ -78,7 +78,7 @@ const Browse = () => {
             {/* xxxxxxxxxxxxxxxxxxx Menu Ends xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

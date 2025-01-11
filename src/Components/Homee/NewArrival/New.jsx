@@ -11,7 +11,7 @@ import CommonBtnTwo from '../../CommonBtnTwo/CommonBtnTwo'
 const New = () => {
   return (
     <>
-      <div className="NewMother">
+      <section className="NewMother">
         <div className="container">
           <div className="newShow">
             <h2 className='Title text-center'>NEW ARRIVALS</h2>
@@ -23,12 +23,12 @@ const New = () => {
             </div>
             <div className="new_Btn">
               {/* <CommonBtnOne btn1Contnt={'View All'} design={'!bg-[#fff] !text-[#18443F]'} hovereffect={'hover:bg-[#18443F] hover:text-[#fff]'}  linkAdd={'https://www.facebook.com/'}/> */}
-              <CommonBtnTwo btn2Contnt={'View All'} linkAdd={'https://www.facebook.com/'} />
+              <CommonBtnTwo btn2Contnt={'View All'} linkAdd={'/shop'} />
             </div>
             <div className='newPartBtom' ></div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

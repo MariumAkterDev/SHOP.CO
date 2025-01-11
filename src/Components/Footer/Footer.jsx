@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       {/* --------------------------------SubsCribe Part------------------------------ */}
-      <div className="container mySubsCont">
+      <section className="container mySubsCont">
         <div className="SubscribePart ">
           <div className="subsTxt">
             <h2 className='subsTxtH2'>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
@@ -27,9 +27,9 @@ const Footer = () => {
             <button className='subs_Btn'>Subscribe</button>
           </div>
         </div>
-      </div>
+      </section>
       {/* -----------------------------------Footer Part------------------------------ */}
-      <div className="Footer">
+      <section className="Footer">
         <div className="container">
           <div className="footer_Row">
             {/* ----------------------------------Footer Row 1---------------------------------------- */}
@@ -41,10 +41,10 @@ const Footer = () => {
                 <p className='footerP'>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
                 <div className="footer_Icon">
                   <ul>
-                    <li><Link><FaTwitter /></Link></li>
-                    <li><Link><FaFacebookF /></Link></li>
-                    <li><Link><FaInstagram /></Link></li>
-                    <li><Link><FaGithub /></Link></li>
+                    <li><Link target='_blank' to='https://twitter.com/'  ><FaTwitter /></Link></li>
+                    <li><Link target='_blank' to='https://facebook.com/' ><FaFacebookF /></Link></li>
+                    <li><Link target='_blank' to='https://instagram.com/'><FaInstagram /></Link></li>
+                    <li><Link target='_blank' to='https://github.com/'   ><FaGithub /></Link></li>
                   </ul>
                 </div>
               </div>
@@ -108,7 +108,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

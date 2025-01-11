@@ -10,14 +10,14 @@ const Nav = () => {
 
   return (
     <>
-      <div className="NavFull">
+      <section className="NavFull">
         {/* --------------------------------Header-------------------------------------------- */}
         <div className="headerPart">
           <div className="headTxt">
             <p className="headTxtP">
               Sign up and get 20% off to your first order.
             </p>
-            <Link className="headsignUp">Sign Up Now</Link>
+            <Link to='SignUp' className="headsignUp">Sign Up Now</Link>
           </div>
         </div>
         {/* -------------------------------------Nav----------------------------------------- */}
@@ -30,24 +30,24 @@ const Nav = () => {
                 <div className="mobMenu">
                   <ul>
                     <li>
-                      <Link>Shop</Link>
+                      <Link to="/">Home</Link>
                     </li>
                     <li>
-                      <Link>On Sale</Link>
+                      <Link to='/shop'>Shop</Link>
                     </li>
                     <li>
-                      <Link>New Arrivals</Link>
+                      <Link to=''>New Arrivals</Link>
                     </li>
                     <li>
-                      <Link>Top Selling</Link>
+                      <Link to='/contact'>Contact</Link>
                     </li>
                   </ul>
                 </div>
               )}
             </div>
-            {/* ---------------------Mobile Nav Menu Ends -------- */}
+            {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Mobile Nav Menu Ends xxxxxxxxxxxxxxxxxxxxxxxxxx */}
             <div className="logoCol">
-              <Link>
+              <Link to='/' >
                 <img src={logo} alt="logo" className="logo" />
               </Link>
             </div>
@@ -55,22 +55,22 @@ const Nav = () => {
             <div className="navMenuCol">
               <ul>
                 <li>
-                  <Link>Shop</Link>
+                  <Link to='/' >Home</Link>
                 </li>
                 <li>
-                  <Link>On Sale</Link>
+                  <Link to='/shop' >Shop</Link>
                 </li>
                 <li>
-                  <Link>New Arrivals</Link>
+                  <Link to='' >New Arrivals</Link>
                 </li>
                 <li>
-                  <Link>Top Selling</Link>
+                  <Link to='/contact' >Contact</Link>
                 </li>
               </ul>
             </div>
             <div className="menuIcon">
               <div className="navCartMain">
-                <Link className="navCartIcon ">
+                <Link to='/cart' className="navCartIcon ">
                   <FaCartArrowDown />
                 </Link>
                 {/* -------------------------------NavCartPopUp starts------------------------ */}
@@ -87,7 +87,7 @@ const Nav = () => {
               </div>
 
               <div className="navAccountMain">
-                <Link className="navAccountIcon">
+                <Link to='SignIn' className="navAccountIcon">
                   <FaUserCircle />
                 </Link>
                 {/* -------------------------------NavAccountPopUp starts------------------------ */}
@@ -103,7 +103,7 @@ const Nav = () => {
           </div>
         </div>
         {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx NavBar Ends xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-      </div>
+      </section>
     </>
   );
 };
