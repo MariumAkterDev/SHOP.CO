@@ -53,7 +53,7 @@
 }
 /* -------------------------Respossive Add Cart Button ----------------------- */
 .resAddCartBtn{
-    @apply lg:hidden bg-PrimaryColor-62 w-full h-[30px] text-[#fff] text-[17px] font-poppins mt-[4px]
+    @apply lg:hidden bg-PrimaryColor-62 w-full py-[2px] text-[#fff] text-[15px] font-poppins mt-[4px]
 }
 
 
