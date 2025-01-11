@@ -1,8 +1,8 @@
 .BrowseSection{
-    @apply pb-[56px] sm:pb-[70px] lg:pb-[140px]
+    @apply pb-[56px] sm:pb-[70px] lg:pb-[188px]
 }
 .browseH2{
-    @apply mx-auto text-center w-[246px] sm:w-full mb-[18px] sm:mb-[34px] lg:mb-[61px]
+    @apply mx-auto text-center w-[246px] sm:w-full mb-[18px] sm:mb-[34px] lg:mb-[85px]
 }
 .browseImgMenu{
     @apply flex flex-wrap justify-center items-center gap-[10px]

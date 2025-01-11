@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
@@ -7,6 +7,18 @@ import { FaUserCircle, FaCartArrowDown, FaBars } from "react-icons/fa";
 
 const Nav = () => {
   const [show, setShow] = useState(false);
+  const mobNavRef = useRef(null)
+
+  const mobNavToggle = (e) => {
+    if (e.target.contains(mobNavRef.current)) {
+      setShow(false)
+    }
+  }
+
+  console.log(show);
+  useEffect(() => {
+    document.addEventListener('mousedown', mobNavToggle)
+  }, [])
 
   return (
     <>
@@ -24,26 +36,28 @@ const Nav = () => {
         <div className="container">
           <div className="NavRow">
             {/* ----------------------------------Mobile Nav Menu Starts -------------------------- */}
-            <div className="navMobBar">
-              <FaBars className="mobBarIcon" onClick={() => setShow(!show)} />
-              {show && (
-                <div className="mobMenu" onClick={()=>setShow(false)}>
-                  <ul>
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                      <Link to='/shop'>Shop</Link>
-                    </li>
-                    <li>
-                      <Link to=''>New Arrivals</Link>
-                    </li>
-                    <li>
-                      <Link to='/contact'>Contact</Link>
-                    </li>
-                  </ul>
-                </div>
-              )}
+            <div className={`nabMovMother w-full h-screen bg-[#ff000000] fixed top-0 left-0 z-[100] ${show ? 'w-full' : 'w-0'}`}>
+              <div className="navMobBar" ref={mobNavRef} >
+                <FaBars className="mobBarIcon fixed top-[42px] left-[53%] " onClick={() => setShow(!show)} />
+                {show && (
+                  <div className="mobMenu" onClick={() => setShow(false)}>
+                    <ul>
+                      <li>
+                        <Link to="/">Home</Link>
+                      </li>
+                      <li>
+                        <Link to='/shop'>Shop</Link>
+                      </li>
+                      <li>
+                        <Link to='/shop'>New Arrivals</Link>
+                      </li>
+                      <li>
+                        <Link to='/contact'>Contact</Link>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
             </div>
             {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Mobile Nav Menu Ends xxxxxxxxxxxxxxxxxxxxxxxxxx */}
             <div className="logoCol">
@@ -51,7 +65,7 @@ const Nav = () => {
                 <img src={logo} alt="logo" className="logo" />
               </Link>
             </div>
-            
+
             <div className="navMenuCol">
               <ul>
                 <li>

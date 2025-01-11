@@ -1,8 +1,23 @@
 .singProductCard{
-    @apply w-[141px] lg:w-[295px] sm:mx-auto lg:mx-0 overflow-hidden
+    @apply w-[141px] lg:w-[295px] sm:mx-auto lg:mx-0 overflow-hidden shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]  rounded-t-[22px] cursor-pointer
+}
+.singProductCard_Img{
+    @apply relative
 }
 .signlPrdctImg{
-    @apply w-full h-[150px] lg:w-full lg:h-[298px] rounded-[20px]
+    @apply w-full h-[150px] lg:w-full lg:h-[298px] rounded-[20px] 
+}
+.add_cart_div{
+    @apply w-full h-[298px] rounded-[20px] flex justify-center items-center absolute top-0 bg-[#00000031] opacity-0
+}
+.singProductCard_Img:hover .add_cart_div{
+    @apply transition-all duration-[0.3s] opacity-[1]
+}
+.addCart_Btn{
+    @apply bg-[#fff] px-[10px] py-[8px] text-[20px] text-PrimaryColor-62 font-poppins font-medium rounded-[6px]
+}
+.prodctCard_detail{
+    @apply  px-[15px] pb-[20px]
 }
 .prodtName{
     @apply text-[#000] text-[14px] lg:text-[18px] font-poppins font-semibold mt-[14px] text-center

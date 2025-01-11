@@ -22,7 +22,7 @@ const Top = () => {
             </div>
             <div className="top_Btn">
               {/* <CommonBtnOne btn1Contnt={'View All'} design={'!bg-[#fff] !text-[#18443F]'} hovereffect={'hover:bg-[#18443F] hover:text-[#fff]'}  linkAdd={'https://www.facebook.com/'}/> */}
-              <CommonBtnTwo btn2Contnt={'View All'} linkAdd={'https://www.facebook.com/'} />
+              <CommonBtnTwo btn2Contnt={'View All'} linkAdd={'/shop'} />
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@
 }
 /* ------------------------------------------------Nav----------------------------------------- */
 .NavRow{
-    @apply w-full  sm:mt-[20px] lg:mt-[30px] lg:mb-[45px] py-[15px]  sm:py-[10px]  px-[24px] lg:bg-[#a7d5f624] flex items-center justify-between 
+    @apply w-full  sm:mt-[20px] lg:mt-[30px] lg:mb-[45px] py-[20px]  sm:py-[10px]  px-[24px] lg:bg-[#a7d5f624] flex items-center justify-between 
 }
 
 .logoCol .logo{
@@ -59,18 +59,21 @@
     @apply bg-[#f80c0c] w-[18px] h-[18px] sm:w-[23px] sm:h-[23px] rounded-full flex justify-center items-center text-[#fff] text-[11px] sm:text-[14px] font-poppins font-medium absolute top-[-15px] sm:top-[-21px] left-[13px]
 }
 /* ----------------------------------------Nav Mobile Bar------------------------------ */
+.nabMovMother{
+    @apply sm:hidden
+}
 .navMobBar{
-    @apply  sm:hidden  flex justify-center items-center overflow-hidden
+    @apply   overflow-hidden
 }
 .mobBarIcon{
     @apply text-[20px] text-brand-Color
 }
 .mobMenu{
-    @apply w-[100%] py-[25px] bg-[#555454] absolute top-[74px] left-[50%] translate-x-[-50%]  transition-all duration-[0.6s] z-[100]
+    @apply w-[100%] py-[70px] bg-[#555454] absolute top-[68px] left-[50%] translate-x-[-50%]  transition-all duration-[0.6s] z-[100]
 }
 .mobMenu ul{
     @apply w-[90%] h-full mx-auto flex justify-around items-center
 }
 .mobMenu ul li{
-    @apply text-[#fff] font-semibold font-poppins text-[14px]
+    @apply text-[#fff] font-medium font-poppins text-[16px]
 }
