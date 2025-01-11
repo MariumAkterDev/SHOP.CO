@@ -23,11 +23,11 @@ const Nav = () => {
         {/* -------------------------------------Nav----------------------------------------- */}
         <div className="container">
           <div className="NavRow">
-            {/* ---------------------Mobile Nav Menu Starts -------- */}
+            {/* ----------------------------------Mobile Nav Menu Starts -------------------------- */}
             <div className="navMobBar">
               <FaBars className="mobBarIcon" onClick={() => setShow(!show)} />
               {show && (
-                <div className="mobMenu">
+                <div className="mobMenu" onClick={()=>setShow(false)}>
                   <ul>
                     <li>
                       <Link to="/">Home</Link>
