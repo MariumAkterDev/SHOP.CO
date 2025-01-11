@@ -36,9 +36,9 @@ const Nav = () => {
         <div className="container">
           <div className="NavRow">
             {/* ----------------------------------Mobile Nav Menu Starts -------------------------- */}
-            <div className={`nabMovMother w-full h-screen bg-[#00000000] fixed top-0 left-0 z-[100] ${show ? 'w-full' : 'w-0'}`}>
+          
               <div className="navMobBar" ref={mobNavRef} >
-                <FaBars className="mobBarIcon fixed top-[42px] left-[53%] " onClick={() => setShow(!show)} />
+                <FaBars className="mobBarIcon " onClick={() => setShow(!show)} />
                 {show && (
                   <div className="mobMenu" onClick={() => setShow(false)}>
                     <ul>
@@ -58,7 +58,7 @@ const Nav = () => {
                   </div>
                 )}
               </div>
-            </div>
+           
             {/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Mobile Nav Menu Ends xxxxxxxxxxxxxxxxxxxxxxxxxx */}
             <div className="logoCol">
               <Link to='/' >
