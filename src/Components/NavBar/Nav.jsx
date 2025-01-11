@@ -36,7 +36,7 @@ const Nav = () => {
         <div className="container">
           <div className="NavRow">
             {/* ----------------------------------Mobile Nav Menu Starts -------------------------- */}
-            <div className={`nabMovMother w-full h-screen bg-[#ff000000] fixed top-0 left-0 z-[100] ${show ? 'w-full' : 'w-0'}`}>
+            <div className={`nabMovMother w-full h-screen bg-[red] fixed top-0 left-0 z-[100] ${show ? 'w-full' : 'w-0'}`}>
               <div className="navMobBar" ref={mobNavRef} >
                 <FaBars className="mobBarIcon fixed top-[42px] left-[53%] " onClick={() => setShow(!show)} />
                 {show && (
