@@ -20,7 +20,7 @@ const SingleProduct = ({
                 </div>
             </div>
 
-            <div className="prodctCard_detail">
+            <div className="prodctCard_detail relative">
                 <h4 className="prodtName">{productName}</h4>
                 <div className="star">
                     <ul>
@@ -51,6 +51,8 @@ const SingleProduct = ({
                         <h4 className="prodtOldPriceH4">{discount}</h4>
                     </div>
                 </div>
+                <button className="resAddCartBtn" >Add Cart</button>
+                
             </div>
         </div>
     );

@@ -61,7 +61,7 @@
 /* ----------------------------------------Nav Mobile Bar------------------------------ */
 
 .navMobBar{
-    @apply flex items-center justify-between  overflow-hidden
+    @apply sm:hidden flex items-center justify-between  overflow-hidden
 }
 .mobBarIcon{
     @apply text-[20px] text-brand-Color

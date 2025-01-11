@@ -2,7 +2,7 @@
     @apply pb-[40px] sm:pb-[45px] lg:pb-[120px]
 }
 .Topproduct_Row{
-    @apply  flex justify-center sm:justify-between flex-wrap gap-[30px] sm:gap-[46px] lg:gap-0 mt-[18px] sm:mt-[28px] lg:mt-[85px] mb-[26px] sm:mb-[85px]
+    @apply  flex justify-center sm:justify-between flex-wrap gap-[30px] sm:gap-[46px] lg:gap-0 mt-[18px] sm:mt-[28px] lg:mt-[85px] mb-[40px] sm:mb-[85px]
 }
 .top_Btn{
     @apply w-full flex justify-center 
