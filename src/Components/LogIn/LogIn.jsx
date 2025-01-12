@@ -6,10 +6,24 @@ import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const LogIn = () => {
-  const [showEye, setShowEye] = useState(false);
+  // ======================================> useState part Starts
+    const [showEye, setShowEye] = useState(false);
+    const [formData, setFormData] = useState({email:'', password:''})
+    const [error, setError] = useState({emailError:'' , passwordError:''})  
+  
+    // ========================================> Main Funtion Part
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    if(formData.email == ''){
+      setError((prev)=>({...prev , emailError:'Please enter your email'}))
+    }
+    if(formData.password == ''){
+      setError((prev)=>({...prev , passwordError:'Please enter your password'}))
+    }
+  }
 
   return (
-    <div className="LogIn_Main">
+    <div className="LogIn_Main" onSubmit={handleSubmit}>
       <div className="form-container">
         <div className="reg_img">
           <Link to="/">
@@ -19,7 +33,7 @@ const LogIn = () => {
         <h5>Login</h5>
         {/* ------------------------ Form Start ------------------------- */}
         <form>
-          {/*  ------------------------ Email part ----------------------- */}
+          {/*  -------------------------------------------------> Email part */}
           <div className="mb-4">
             <label htmlFor="email" className="label">
               Email
@@ -29,11 +43,12 @@ const LogIn = () => {
               id="email"
               placeholder="Enter your email"
               className="input-field"
+              onChange={(e)=>{setFormData((prev)=>({...prev, email:e.target.value })), setError((prev)=>({...prev , emailError:''}))}}
             />
             {/*  Email Error ---------------------------------- */}
-            <p className="error">error</p>
+            <p className="error">{error.emailError}</p>
           </div>
-          {/* -------------------------------------  Password Part */}
+          {/* ----------------------------------------------------------->  Password Part */}
 
           <label htmlFor="password" className="label">
             Password
@@ -44,6 +59,7 @@ const LogIn = () => {
               className="input-field"
               placeholder="Enter your password"
               type={showEye ? "text" : "password"}
+              onChange={(e)=>{setFormData((prev)=>({...prev, password:e.target.value})), setError((prev)=>({...prev , passwordError:''}))}}
             />
             {showEye ? (
               <FaEye
@@ -58,7 +74,7 @@ const LogIn = () => {
             )}
           </div>
           {/* ------- Password Error ---------- */}
-          <p className="error">error</p>
+          <p className="error">{error.passwordError}</p>
           {/*--------- Login Button ------------  */}
           <button type="submit" className="button">
             Login

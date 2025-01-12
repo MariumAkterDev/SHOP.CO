@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../LogIn/LogIn.css'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png'
 
 const SignUp = () => {
+  // ======================================> useState part Starts
+  const [formData, setFormData] = useState({userName:'', email:'', password:''})
+  const [error, setError] = useState({userError:'' , emailError:'' , passwordError:''})  
+
+
+ 
+
+
+  // ========================================> Main Funtion Part
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    if(formData.userName == ''){
+      setError((prev)=>({...prev , userError:'Please enter your username'}))
+    }
+    if(formData.email == ''){
+      setError((prev)=>({...prev , emailError:'Please enter your email'}))
+    }
+    if(formData.password == ''){
+      setError((prev)=>({...prev , passwordError:'Please enter your password'}))
+    }
+    
+  }
+
+ 
+  
+
   return (
     <div className="LogIn_Main">
       <div className="form-container">
@@ -15,7 +41,7 @@ const SignUp = () => {
         <h5>Sign Up</h5>
         {/* ------------------------ Form Start ------------------------- */}
         <form>
-          {/*  ------------------------ User Name part ----------------------- */}
+          {/*  ------------------------------------------------------------------> User Name part  */}
           <div className="mb-4">
             <label htmlFor="email" className="label">
               UserName
@@ -25,11 +51,12 @@ const SignUp = () => {
               id="email"
               placeholder="Enter your user name"
               className="input-field"
+              onChange={(e)=>{setFormData((prev)=>({...prev, userName:e.target.value})), setError((prev)=>({...prev , userError:''}))}}
             />
             {/*  UserName Error ---------------------------------- */}
-            <p className="error">error</p>
+            <p className="error">{error.userError}</p>
           </div>
-          {/*  ------------------------ Email part ----------------------- */}
+          {/*  -------------------------------------------------------------------> Email part  */}
           <div className="mb-4">
             <label htmlFor="email" className="label">
               Email
@@ -39,11 +66,12 @@ const SignUp = () => {
               id="email"
               placeholder="Enter your email"
               className="input-field"
+              onChange={(e)=>{setFormData((prev)=>({...prev, email:e.target.value })), setError((prev)=>({...prev , emailError:''}))}}
             />
             {/*  Email Error ---------------------------------- */}
-            <p className="error">error</p>
+            <p className="error">{error.emailError}</p>
           </div>
-          {/* -------------------------------------  Password Part */}
+          {/* ------------------------------------------------------------------------------>  Password Part */}
 
           <label htmlFor="password" className="label">
             Password
@@ -53,12 +81,13 @@ const SignUp = () => {
               id="password"
               className="input-field"
               placeholder="Enter your password"
+              onChange={(e)=>{setFormData((prev)=>({...prev, password:e.target.value})), setError((prev)=>({...prev , passwordError:''}))}}
             />
           </div>
           {/* ------- Password Error ---------- */}
-          <p className="error">error</p>
+          <p className="error">{error.passwordError}</p>
           {/*--------- Login Button ------------  */}
-          <button type="submit" className="button">
+          <button type="submit" className="button" onClick={handleSubmit}>
             Sign Up
           </button>
         </form>

@@ -2,19 +2,15 @@
     @apply flex justify-center items-center h-[100vh] max-w-full
 }
 .form-container h5 {
-
-    @apply text-[24px] font-bold font-poppins text-PrimaryColor-62 text-center mb-[5px]
+    @apply text-[24px] font-semibold font-poppins text-PrimaryColor-62 text-center mb-[5px]
 }
 .reg_img {
-
     @apply flex justify-center items-center
 }
 .reg_img img {
-
     @apply w-[130px] text-center mb-[10px]
 }
 .form-container h2 {
-
     @apply text-black mb-[26px] font-poltawski text-center text-[20px] font-semibold;
 }
 .form-container {
@@ -30,11 +26,9 @@
     @apply w-full bg-[#18443F] text-white font-poltawski p-[6px] rounded-sm transition-all duration-[.4s] text-center mt-3 cursor-pointer;
 }
 .reg_text {
-
     @apply font-poltawski mt-[20px] text-center font-medium
 }
 .reg_text span {
-
     @apply text-PrimaryColor-62  hover:border-b-[1px] hover:border-PrimaryColor-62 font-poltawski transition-all duration-[.2s] font-bold
 }
 .button:hover {
