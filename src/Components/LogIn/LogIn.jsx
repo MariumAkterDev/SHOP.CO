@@ -1,9 +1,13 @@
-import React from 'react'
-import '../LogIn/LogIn.css'
-import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png'
+import React, { useState } from "react";
+import "./LogIn.css";
+import logo from "../../assets/images/logo.png";
+import { PiEyeClosedBold } from "react-icons/pi";
+import { FaEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const SignUp = () => {
+const LogIn = () => {
+  const [showEye, setShowEye] = useState(false);
+
   return (
     <div className="LogIn_Main">
       <div className="form-container">
@@ -12,23 +16,9 @@ const SignUp = () => {
             <img src={logo} alt="logo" />
           </Link>
         </div>
-        <h5>Sign Up</h5>
+        <h5>Login</h5>
         {/* ------------------------ Form Start ------------------------- */}
         <form>
-          {/*  ------------------------ User Name part ----------------------- */}
-          <div className="mb-4">
-            <label htmlFor="email" className="label">
-              UserName
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your user name"
-              className="input-field"
-            />
-            {/*  UserName Error ---------------------------------- */}
-            <p className="error">error</p>
-          </div>
           {/*  ------------------------ Email part ----------------------- */}
           <div className="mb-4">
             <label htmlFor="email" className="label">
@@ -53,13 +43,25 @@ const SignUp = () => {
               id="password"
               className="input-field"
               placeholder="Enter your password"
+              type={showEye ? "text" : "password"}
             />
+            {showEye ? (
+              <FaEye
+                className="inputEye"
+                onClick={() => setShowEye(!showEye)}
+              />
+            ) : (
+              <PiEyeClosedBold
+                className="inputEye"
+                onClick={() => setShowEye(!showEye)}
+              />
+            )}
           </div>
           {/* ------- Password Error ---------- */}
           <p className="error">error</p>
           {/*--------- Login Button ------------  */}
           <button type="submit" className="button">
-            Sign Up
+            Login
           </button>
         </form>
 
@@ -67,13 +69,13 @@ const SignUp = () => {
         <p className="reg_text">
           Don't have an account?{" "}
           <span>
-            <Link to={"/register/LogIn"}>Log In</Link>
+            <Link to={"/register/SignUp"}>SignUp</Link>
           </span>
         </p>
       </div>
       {/* xxxxxxxxxxxxxxxxxxxxxxxxx form container ends xxxxxxxxxxxxxxxxxxxxxx */}
     </div>
   );
-}
+};
 
-export default SignUp
+export default LogIn;

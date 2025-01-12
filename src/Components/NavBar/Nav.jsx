@@ -29,7 +29,7 @@ const Nav = () => {
             <p className="headTxtP">
               Sign up and get 20% off to your first order.
             </p>
-            <Link to='SignUp' className="headsignUp">Sign Up Now</Link>
+            <Link to='/register/SignUp' className="headsignUp">Sign Up Now</Link>
           </div>
         </div>
         {/* -------------------------------------Nav----------------------------------------- */}
@@ -101,7 +101,7 @@ const Nav = () => {
               </div>
 
               <div className="navAccountMain">
-                <Link to='SignIn' className="navAccountIcon">
+                <Link to='/register/LogIn' className="navAccountIcon">
                   <FaUserCircle />
                 </Link>
                 {/* -------------------------------NavAccountPopUp starts------------------------ */}

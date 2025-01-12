@@ -7,8 +7,9 @@ import CatagoryPage from './Pages/Shop'
 import Shop from './Pages/Shop'
 import CartPage from './Pages/CartPage'
 import Contact from './Components/Contact/Contact'
-import SignIn from './Components/Sign In/SignIn'
 import SignUp from './Components/Sign Up/SignUp'
+import LogIn from './Components/LogIn/LogIn'
+import LayoutTwo from './Layouts/LayoutTwo/LayoutTwo'
 
 function App() {
   const myPath = createBrowserRouter(
@@ -20,9 +21,13 @@ function App() {
           <Route path='/shop' element={<Shop/>} />
           <Route path='/cart' element={<CartPage/>} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='/SignIn' element={<SignIn/>} />
-          <Route path='/SignUp' element={<SignUp/>} />
           <Route path='*' element={<NotFound/>} />
+        </Route>
+        {/* ------------------LayoutOne---------------------- */}
+        <Route path='/register' element={<LayoutTwo/>} >
+          <Route path='/register/LogIn' element={<LogIn/>} />
+          <Route path='/register/SignUp' element={<SignUp/>} />
+
         </Route>
 
       </Route>
