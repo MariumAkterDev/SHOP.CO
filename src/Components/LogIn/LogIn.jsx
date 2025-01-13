@@ -3,25 +3,90 @@ import "./LogIn.css";
 import logo from "../../assets/images/logo.png";
 import { PiEyeClosedBold } from "react-icons/pi";
 import { FaEye } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { Bounce, toast } from "react-toastify";
 
 const LogIn = () => {
   // ======================================> useState part Starts
-    const [showEye, setShowEye] = useState(false);
-    const [formData, setFormData] = useState({email:'', password:''})
-    const [error, setError] = useState({emailError:'' , passwordError:''})  
-  
-    // ========================================> Main Funtion Part
-  const handleSubmit = (e)=>{
+  const [showEye, setShowEye] = useState(false);
+  const [formData, setFormData] = useState({ email: '', password: '' })
+  const [error, setError] = useState({ emailError: '', passwordError: '' })
+
+  // ===========================================> Firebase variables
+  const auth = getAuth();
+  // =========================> Navigation Variable
+  const navigate = useNavigate()
+
+  // ========================================> Main Funtion Part
+  const handleSubmit = (e) => {
     e.preventDefault()
-    if(formData.email == ''){
-      setError((prev)=>({...prev , emailError:'Please enter your email'}))
+    if (formData.email == '') {
+      setError((prev) => ({ ...prev, emailError: 'Please enter your email' }))
     }
-    if(formData.password == ''){
-      setError((prev)=>({...prev , passwordError:'Please enter your password'}))
+    if (formData.password == '') {
+      setError((prev) => ({ ...prev, passwordError: 'Please enter your password' }))
+    } else {
+      // ==============$$$$$$$$$$$$$$$$================> Sign In authentication of firebase of email and password starts
+      signInWithEmailAndPassword(auth, formData.email, formData.password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          
+          if(user.emailVerified == true) {
+            navigate('/')
+             // -------------------------------------------> Successfully LogIn toastify
+             toast.success('Successfully LogIn', {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+              transition: Bounce,
+            });
+
+          }else{
+            navigate('/register/SignUp')
+            // -------------------------------------------> Email unauthenticated toastify
+            toast.error('Email is not Varified', {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Bounce,
+            });
+          }
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          if(errorCode == 'auth/invalid-credential'){
+            // ------------------------------------------> Wrong email  or password toastify
+            toast.warning('Something went wrong!', {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Bounce,
+            });
+          }
+        });
+
     }
   }
 
+
+
+  // =========================================jsx part ====================================>
   return (
     <div className="LogIn_Main" onSubmit={handleSubmit}>
       <div className="form-container">
@@ -43,7 +108,7 @@ const LogIn = () => {
               id="email"
               placeholder="Enter your email"
               className="input-field"
-              onChange={(e)=>{setFormData((prev)=>({...prev, email:e.target.value })), setError((prev)=>({...prev , emailError:''}))}}
+              onChange={(e) => { setFormData((prev) => ({ ...prev, email: e.target.value })), setError((prev) => ({ ...prev, emailError: '' })) }}
             />
             {/*  Email Error ---------------------------------- */}
             <p className="error">{error.emailError}</p>
@@ -59,7 +124,7 @@ const LogIn = () => {
               className="input-field"
               placeholder="Enter your password"
               type={showEye ? "text" : "password"}
-              onChange={(e)=>{setFormData((prev)=>({...prev, password:e.target.value})), setError((prev)=>({...prev , passwordError:''}))}}
+              onChange={(e) => { setFormData((prev) => ({ ...prev, password: e.target.value })), setError((prev) => ({ ...prev, passwordError: '' })) }}
             />
             {showEye ? (
               <FaEye

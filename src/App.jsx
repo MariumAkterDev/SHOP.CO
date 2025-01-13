@@ -11,6 +11,10 @@ import SignUp from './Components/Sign Up/SignUp'
 import LogIn from './Components/LogIn/LogIn'
 import LayoutTwo from './Layouts/LayoutTwo/LayoutTwo'
 import ProductDetails from './Components/ProductDeatails/ProductDetails'
+import app from './Firebase.config'
+import { ToastContainer, toast } from 'react-toastify';
+
+
 
 function App() {
   const myPath = createBrowserRouter(
@@ -39,6 +43,7 @@ function App() {
   return (
     <>
        <RouterProvider router={myPath} />
+       <ToastContainer />
     </>
   )
 }

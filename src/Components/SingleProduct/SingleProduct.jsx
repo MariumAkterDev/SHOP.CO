@@ -13,15 +13,16 @@ const SingleProduct = ({
 }) => {
     return (
         <div className="singProductCard">
+            {/* ======================================Card Main Img Portion ========================= */}
             <div className="singProductCard_Img">
-                <img src={prdctImg} alt="" className="signlPrdctImg" />
+                    <img src={prdctImg} alt="" className="signlPrdctImg" />
                 <div className="add_cart_div">
                     <button className="addCart_Btn">
                         Add Cart
                     </button>
                 </div>
             </div>
-
+            {/* ==================================Caard Text Portion ================================= */}
             <Link to={singlePrdctLink}>
                 <div className="prodctCard_detail relative">
                     <h4 className="prodtName">{productName}</h4>
@@ -53,8 +54,9 @@ const SingleProduct = ({
                             <h3 className="prodtOldPriceH3">{oldPrice}</h3>
                             <h4 className="prodtOldPriceH4">{discount}</h4>
                         </div>
-                    </div>
+                    {/* ------------------------ add to cart button for default to md ----------------------- */}
                     <button className="resAddCartBtn" >Add Cart</button>
+                    </div>
 
                 </div>
             </Link>
