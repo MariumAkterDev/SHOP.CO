@@ -32,7 +32,9 @@
 .menuIcon{
     @apply flex items-center gap-[15px] text-brand-Color sm:text-[20px] md:text-[25px] relative
 }
-
+.userIconImg{
+    @apply  w-[17px] h-[17px] sm:w-[22px] sm:h-[22px] lg:w-[30px] lg:h-[30px]
+}
 .shoppingCart{
     @apply bg-brand-Color px-[10px] py-[6px] relative
 }
@@ -64,32 +66,32 @@
     @apply sm:hidden flex items-center justify-between  overflow-hidden
 }
 .mobBarIcon{
-    @apply text-[20px] text-brand-Color
+    @apply text-[22px] text-brand-Color p-[4px]
 }
 .mobMenu{
-    @apply w-[100%] py-[70px] bg-[#978989] absolute top-[70px] left-[50%] translate-x-[-50%]  transition-all duration-[0.6s] z-[100]
+    @apply w-[200px] h-[45%] bg-[#d6d3d3] absolute top-[84px] left-[0]  z-[100] transition-all duration-[1s]
 }
 .mobMenu ul{
-    @apply w-[90%] h-full mx-auto flex justify-around items-center
+    @apply w-[90%] h-full mx-auto flex flex-col gap-[20px] mt-[40px] ml-[30px]
 }
 .mobMenu ul li{
-    @apply text-[#fff] font-medium font-poppins text-[16px]
+    @apply text-brand-Color font-semibold font-poppins text-[18px]
 }
 /* ================================ Log In Acoount Dropdown ====================== */
 .navAccountLogIn{
     @apply relative
 }
 .logOutMainDv{
-    @apply absolute top-[20px] right-[0px] sm:top-[27px] sm:right-[0px] lg:top-[32px] lg:right-[-23px] rounded-[50px] shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
+    @apply absolute top-[20px] right-[0px] sm:top-[27px] sm:right-[0px] lg:top-[38px] lg:right-[28px] shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
 }
 .accountDropClass1{
-    @apply w-[100px] lg:w-[150px] flex justify-center gap-2 items-center mx-auto shadow-xl text-[15px] lg:text-lg bg-brand-Color backdrop-blur-md lg:font-semibold isolation-auto text-[#fff] border-brand-Color before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#fff] hover:text-brand-Color before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 pl-[7px] lg:pl-0 py-[4px] lg:py-2 overflow-hidden border-2 rounded-full
+    @apply w-[100px] lg:w-[150px] flex justify-center gap-[6px] lg:gap-[10px] items-center mx-auto shadow-xl text-[15px] lg:text-lg bg-brand-Color backdrop-blur-md lg:font-semibold isolation-auto text-[#fff] border-brand-Color before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0  before:bg-[#fff] hover:text-brand-Color before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10  lg:pl-0 py-[4px] lg:py-2 overflow-hidden border-[1px]
 }
 .accountDropClass1:hover .accountDropClass2{
     @apply rotate-[45deg] transition-all duration-[0.4s]
 }
 .accountDropClass2{
-    @apply text-[18px] lg:text-[22px]
+    @apply text-[16px] lg:text-[22px]
 }
 .accountDropClass3{
     @apply fill-[#fff]

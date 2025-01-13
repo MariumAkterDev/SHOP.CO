@@ -7,6 +7,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { userData } from "../Slice/userSlice";
+import userIcon from '../../assets/images/userIcon.webp'
 
 const Nav = () => {
   const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ const Nav = () => {
 
   // ==================================>taking Redux data 
   const sliceUser = useSelector((state) => state.currentUser.value)
- 
+
 
   const mobNavToggle = (e) => {
     if (e.target.contains(mobNavRef.current)) {
@@ -55,10 +56,10 @@ const Nav = () => {
           <div className="NavRow">
             {/* ----------------------------------Mobile Nav Menu Starts -------------------------- */}
 
-            <div className="navMobBar" ref={mobNavRef}>
+            <div className={`navMobBar ${show ? 'bg-[#e4a9a9bd]' : 'bg-[#f2c5c551]'}`} ref={mobNavRef}>
               <FaBars className="mobBarIcon " onClick={() => setShow(!show)} />
               {show && (
-                <div className="mobMenu" onClick={() => setShow(false)}>
+                <div className={`mobMenu`} onClick={() => setShow(false)}>
                   <ul>
                     <li>
                       <Link to="/" >Home</Link>
@@ -139,7 +140,7 @@ const Nav = () => {
                 {/* ${sliceUser.emailVerified ? 'block' : 'hidden'} */}
                 <div className="navAccountMain  flex" onClick={() => setShowLog(!showLog)}>
                   <Link to="" className="navAccountIcon">
-                    <FaUserCircle />
+                    <img src={userIcon} alt="" className="userIconImg" />
                   </Link>
                   <button className="userAccntDownArrow">
                     <MdKeyboardArrowDown className="" />
@@ -166,17 +167,11 @@ const Nav = () => {
                     >
                       Log Out
                       <BsArrowUpRightCircle className="accountDropClass2 " />
-                      
-
                     </button>
                   </div>
-
                 }
                 {/* ===================== Log Out button Ends ================================ */}
-
-
               </div>
-
               {/* xxxxxxxxxxxxxxxxxx----------- for log in users ends ------------------xxxxxxxxxxxxxxxxxxxxxxxxxxx */}
             </div>
           </div>
