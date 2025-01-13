@@ -6,6 +6,8 @@ import { FaEye } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Bounce, toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { userData } from "../Slice/userSlice";
 
 const LogIn = () => {
   // ======================================> useState part Starts
@@ -17,6 +19,11 @@ const LogIn = () => {
   const auth = getAuth();
   // =========================> Navigation Variable
   const navigate = useNavigate()
+  // =========================> redux Variable
+  const dispatch = useDispatch()
+
+
+
 
   // ========================================> Main Funtion Part
   const handleSubmit = (e) => {
@@ -39,13 +46,16 @@ const LogIn = () => {
               position: "top-right",
               autoClose: 3000,
               hideProgressBar: false,
-              closeOnClick: false,
-              pauseOnHover: true,
+              closeOnClick: true,
+              pauseOnHover: false,
               draggable: true,
               progress: undefined,
               theme: "colored",
               transition: Bounce,
             });
+            // -------------------------------> Store User Data in Redux
+            dispatch(userData(user))
+            localStorage.setItem('currentUser', JSON.stringify(user))
 
           }else{
             navigate('/register/SignUp')
@@ -54,8 +64,8 @@ const LogIn = () => {
               position: "top-right",
               autoClose: 3000,
               hideProgressBar: false,
-              closeOnClick: false,
-              pauseOnHover: true,
+              closeOnClick: true,
+              pauseOnHover: false,
               draggable: true,
               progress: undefined,
               theme: "dark",
@@ -80,10 +90,8 @@ const LogIn = () => {
             });
           }
         });
-
     }
   }
-
 
 
   // =========================================jsx part ====================================>
