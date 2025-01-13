@@ -135,7 +135,7 @@ const Nav = () => {
               </div>
               {/* xxxxxxxxxxxxxxxxxx----------- for log out users ends ---------------------xxxxxxxxxxxxxxxxxxxxxxxxxxx */}
               {/* ^^^^^^^^^^^^^^^^^^----------- for log in users starts --------------------xxxxxxxxxxxxxxxxxxxxxxxxxxx */}
-              <div className={`navAccountLogIn bg-[red]  relative ${sliceUser ? 'block' : 'hidden'} `}>
+              <div className={`navAccountLogIn ${sliceUser ? 'block' : 'hidden'} `}>
                 {/* ${sliceUser.emailVerified ? 'block' : 'hidden'} */}
                 <div className="navAccountMain  flex" onClick={() => setShowLog(!showLog)}>
                   <Link to="" className="navAccountIcon">

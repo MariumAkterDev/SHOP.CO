@@ -77,11 +77,11 @@ const LogIn = () => {
           const errorCode = error.code;
           if(errorCode == 'auth/invalid-credential'){
             // ------------------------------------------> Wrong email  or password toastify
-            toast.warning('Something went wrong!', {
+            toast.warning('Invalid account or password', {
               position: "top-right",
               autoClose: 3000,
               hideProgressBar: false,
-              closeOnClick: false,
+              closeOnClick: true,
               pauseOnHover: true,
               draggable: true,
               progress: undefined,
