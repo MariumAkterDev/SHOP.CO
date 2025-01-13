@@ -1,0 +1,124 @@
+.main_deatails{
+    @apply  pt-[10px] md:flex md:gap-[40px] pb-[40px] w-[90%] m-auto md:w-[100%]
+}
+/* .miniPicture{
+    @apply md:w-[154px] md:h-[167px] 
+} */
+.ProductPicture{
+    @apply  flex justify-center flex-wrap-reverse lg:flex-nowrap 
+}
+.miniPicture{
+    @apply flex lg:block  gap-[10px] mx-auto
+}
+/* ------.miniPicture {
+	height: 104px;
+	width: 258px;
+	display: flex;
+	gap: 10px;
+} */
+.miniPicture .miniParent{
+    @apply w-[95px] h-[95px] lg:w-[152px] lg:h-[167px] md:flex md:flex-col mb-[14px] border-[2px] border-[#b4b2b2] rounded-[20px]  lg:border-none overflow-hidden  
+}
+.bigPicture img{
+    @apply w-[95px] h-[95px] md:w-[444px] md:h-[326px] xl:h-[527px] 
+}
+.ProductPicture{
+    @apply md:flex gap-[14px] 
+}
+/* ------------product text---------------- */
+.Product_text h1{
+    @apply font-poltawski text-[20px] md:text-[40px] text-[#a21232] font-normal
+}
+/* ------------star css------------- */
+.pstar{
+    @apply flex gap-[16px] mt-[9px]
+}
+.pstar ul{
+    @apply flex gap-[7px] text-[#FFC633] md:text-[16px] text-[9px]
+}
+.starr span{
+    @apply font-poppins font-semibold md:text-[16px] text-[#000] text-[14px]
+}
+.starr{
+    @apply font-poppins font-normal text-[#333333] md:text-[16px] text-[14px]
+}
+/* --------------------product rate---------------- */
+.product_rate{
+    @apply flex mt-[10px] gap-[18px]
+}
+.main_rate{
+    @apply flex gap-[77px]
+}
+.main_rate .p1{
+    @apply font-poppins font-normal text-[#000] md:text-[32px] text-[16px]
+}
+.main_rate .p2{
+    @apply font-poppins font-normal text-[#9b9b9b] md:text-[32px] line-through text-[16px]
+}
+.product_rate button{
+    @apply font-poppins font-normal md:text-[16px] md:py-[6px] py-[3px] md:px-[14px] px-[7px] text-[#FF3333] rounded-[64px] cursor-not-allowed text-[14px]
+}
+/* -----------productDescription css------------- */
+.productDescription p{
+    @apply font-poppins font-normal md:text-[16px] text-[#494949] md:w-[532px] mt-[16px] text-[10px] w-[264px]
+}
+.line1{
+    @apply w-full bg-[#929292] h-[1px] md:mt-[16px] mt-[8px]
+}
+/* --------------product color css---------------- */
+.productcolor{
+    @apply md:mt-[16px] mt-[8px]
+}
+.productcolor p{
+    @apply font-poppins font-normal md:text-[16px] text-[13px] text-[#4b4b4b] 
+}
+.productcolor button{
+    @apply text-[14px] md:py-[10px] py-[6px] md:px-[10px] px-[6px] bg-[#4F4631] rounded-full text-[#fff] md:mt-[16px] cursor-none mt-[8px]
+}
+/* -----------------product_size css----------- */
+.product_size{
+    @apply md:mt-[16px] mt-[8px]
+}
+.product_size p{
+    @apply font-poppins font-normal md:text-[16px] text-[#4b4b4b] text-[13px]
+}
+.pbutton {
+    @apply flex md:gap-[12px] gap-[6px]
+}
+.pbutton .pbutton_Size{
+    @apply font-poltawski md:text-[16px] text-[12px] font-normal bg-[#F0F0F0] rounded-[62px] md:py-[12px] py-[6px] md:px-[24px] px-[12px] md:mt-[16px] mt-[8px] hover:bg-brand-Color text-[#272727] hover:text-[#fff] duration-300
+}
+/* -------------add button css------------- */
+.add_button{
+    @apply  mt-[16px] flex justify-between md:gap-[20px]
+}
+.add_button .addCartBtn{
+    @apply py-[7px] sm:py-[10px] md:py-[14px] px-[40px]  sm:px-[154px]   rounded-[62px]  bg-brand-Color duration-300 text-[16px] font-poppins font-normal  text-[#fff] hover:bg-[#1f5f58f6] 
+}
+.add_button .incre_decre{ 
+    @apply  flex items-center gap-[20px] lg:gap-[30px] bg-[#F0F0F0] py-[7px] sm:py-[10px] md:py-[14px] px-[20px] lg:py-[14px] lg:px-[40px]   rounded-[62px] text-[16px] font-poppins font-medium text-[#000]
+}
+/* -------------------------------------------- 2nd Row ---------------------------------- */
+.alsoLikeRow {
+    @apply pt-[23px]  md:pt-[66px] pb-[65px] md:pb-[150px]
+}
+.alsoLikeRowH2{
+    @apply  text-center mb-[19px] md:mb-[58px]
+}
+.alsoLikeBtn{
+    @apply  w-full flex justify-center mt-[44px] md:mt-[80px]
+}
+.alsoLikeImgs{
+    @apply  flex justify-center sm:justify-between flex-wrap gap-[30px] sm:gap-[46px] lg:gap-0 mt-[18px] sm:mt-[28px] lg:mt-[85px] mb-[40px] sm:mb-[85px]
+
+}
+
+
+
+
+
+
+
+
+
+

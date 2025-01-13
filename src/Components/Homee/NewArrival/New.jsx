@@ -16,7 +16,7 @@ const New = () => {
           <div className="newShow">
             <h2 className='Title text-center'>NEW ARRIVALS</h2>
             <div className="product_Row">
-              <SingleProduct prdctImg={product1} productName={'T-SHIRT'} latestPrice={'240'} />
+              <SingleProduct prdctImg={product1} productName={'T-SHIRT'} latestPrice={'240'} singlePrdctLink={'/productdetail'} />
               <SingleProduct prdctImg={product2} productName={'SKINNY FIT JEANS'} latestPrice={'350'} />
               <SingleProduct prdctImg={product3} productName={'CHECKERED SHIRT'} latestPrice={'180'} />
               <SingleProduct prdctImg={product4} productName={'SLEEVE STRIPED'} latestPrice={'220'} />

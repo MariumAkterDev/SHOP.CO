@@ -1,6 +1,7 @@
 import React from "react";
 import "./SingleProduct.css";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SingleProduct = ({
     prdctImg,
@@ -8,6 +9,7 @@ const SingleProduct = ({
     latestPrice,
     oldPrice,
     discount,
+    singlePrdctLink
 }) => {
     return (
         <div className="singProductCard">
@@ -20,40 +22,42 @@ const SingleProduct = ({
                 </div>
             </div>
 
-            <div className="prodctCard_detail relative">
-                <h4 className="prodtName">{productName}</h4>
-                <div className="star">
-                    <ul>
-                        <li>
-                            <FaStar />
-                        </li>
-                        <li>
-                            <FaStar />
-                        </li>
-                        <li>
-                            <FaStar />
-                        </li>
-                        <li>
-                            <FaStar />
-                        </li>
-                        <li>
-                            <FaStar />
-                        </li>
-                    </ul>
-                    <p className="starP">
-                        <span>4</span>/5
-                    </p>
-                </div>
-                <div className="prodtPrice">
-                    <h3 className="prodtPriceH3">${latestPrice}</h3>
-                    <div className="prodtOldPrice">
-                        <h3 className="prodtOldPriceH3">{oldPrice}</h3>
-                        <h4 className="prodtOldPriceH4">{discount}</h4>
+            <Link to={singlePrdctLink}>
+                <div className="prodctCard_detail relative">
+                    <h4 className="prodtName">{productName}</h4>
+                    <div className="star">
+                        <ul>
+                            <li>
+                                <FaStar />
+                            </li>
+                            <li>
+                                <FaStar />
+                            </li>
+                            <li>
+                                <FaStar />
+                            </li>
+                            <li>
+                                <FaStar />
+                            </li>
+                            <li>
+                                <FaStar />
+                            </li>
+                        </ul>
+                        <p className="starP">
+                            <span>4</span>/5
+                        </p>
                     </div>
+                    <div className="prodtPrice">
+                        <h3 className="prodtPriceH3">${latestPrice}</h3>
+                        <div className="prodtOldPrice">
+                            <h3 className="prodtOldPriceH3">{oldPrice}</h3>
+                            <h4 className="prodtOldPriceH4">{discount}</h4>
+                        </div>
+                    </div>
+                    <button className="resAddCartBtn" >Add Cart</button>
+
                 </div>
-                <button className="resAddCartBtn" >Add Cart</button>
-                
-            </div>
+            </Link>
         </div>
     );
 };

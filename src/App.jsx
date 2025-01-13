@@ -10,6 +10,7 @@ import Contact from './Components/Contact/Contact'
 import SignUp from './Components/Sign Up/SignUp'
 import LogIn from './Components/LogIn/LogIn'
 import LayoutTwo from './Layouts/LayoutTwo/LayoutTwo'
+import ProductDetails from './Components/ProductDeatails/ProductDetails'
 
 function App() {
   const myPath = createBrowserRouter(
@@ -21,6 +22,7 @@ function App() {
           <Route path='/shop' element={<Shop/>} />
           <Route path='/cart' element={<CartPage/>} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='/productdetail' element={<ProductDetails/>} />
           <Route path='*' element={<NotFound/>} />
         </Route>
         {/* ------------------LayoutOne---------------------- */}
