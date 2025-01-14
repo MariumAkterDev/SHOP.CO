@@ -47,7 +47,7 @@ hr{
     @apply mt-[20px] flex flex-wrap gap-[8px]
 }
 .size_button .sizeBtn{
-    @apply font-poppins font-normal text-[18px] text-[#6b6b6b] py-[10px] px-[20px] bg-[#F0F0F0] rounded-[62px] hover:bg-brand-Color  hover:text-[#fff] transition-all duration-[0.2s]
+    @apply font-poppins font-normal text-[10px] md:text-[18px] text-[#6b6b6b] py-[6px] md:py-[10px] px-[18px] md:px-[20px] bg-[#F0F0F0] rounded-[62px] hover:bg-brand-Color  hover:text-[#fff] transition-all duration-[0.2s]
 }
 /* -----------------dress style---------- */
 .drees_style{
