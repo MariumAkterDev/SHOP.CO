@@ -1,0 +1,73 @@
+
+.main_info{
+    @apply mt-[36px]
+}
+.main_info h2{
+    @apply font-poppins font-normal text-[16px] text-[#000]
+}
+.main_info input{
+    @apply outline-none border-[1px]  border-brand-Color rounded-[10px] mt-[22px] pl-[10px] py-[5px] h-[50px] font-poppins font-normal text-[14px] md:w-[453px] w-[300px]
+}
+/* -------------Tow------ */
+.Tow{
+    @apply mt-[36px]
+}
+/* ---------------------------bil product details--------- */
+.Bill_product_details{
+    @apply  md:mt-[80px] mt-[-40px]
+}
+.main_text{
+    @apply flex justify-between md:gap-[336px] gap-[10px] 
+}
+.main_text h2{
+    @apply font-poppins md:font-medium font-bold md:text-[24px] text-[18px] text-[#000] 
+}
+.main_text2{
+    @apply flex md:gap-[311px] mt-[14px] gap-[105px]
+}
+.main_text2 h3{
+    @apply font-poppins font-normal md:text-[16px] text-[14px] text-[#969696] 
+}
+.main_text3{
+    @apply flex md:gap-[355px] mt-[22px] gap-[124px]
+}
+.main_text3 h2{
+    @apply font-poppins font-normal text-[16px] text-[#000] 
+}
+.main_text3 h3{
+    @apply font-poppins font-light text-[16px] text-[#000] 
+}
+.main_text4{
+    @apply flex md:gap-[314px] mt-[22px] gap-[110px]
+}
+.main_text4 h2{
+    @apply font-poppins font-normal text-[16px] text-[#000]
+}
+.main_text4 h3{
+    @apply font-poppins font-bold md:text-[24px] text-[20px] text-brand-Color
+}
+/* ------------payement methgood----------- */
+.payment_methood {
+    @apply mt-[22px]
+}
+.payment_methood h2{
+    @apply font-poppins font-semibold text-[24px] text-[#000]
+}
+.payment_methood .Pm .box1{
+    @apply appearance-none w-[20px] h-[20px] border-[2px] border-[#999] rounded-full checked:bg-brand-Color
+}
+.Pm{
+    @apply flex gap-[15px] mt-[25px] items-center
+} 
+.payment_methood .Pm h2{
+    @apply font-poppins font-medium text-[16px] text-[#9F9F9F]
+}
+.shake{
+    @apply text-[#666565]
+}
+.order_button{
+    @apply flex justify-center items-center
+}
+.order_button button{
+    @apply font-poppins font-normal md:text-[20px] text-[16px] text-[#000] border-[1px] border-brand-Color md:py-[17px] py-[10px] md:px-[120px] px-[90px] rounded-[62px] hover:bg-brand-Color hover:text-[#fff] duration-300 mt-[40px] 
+}

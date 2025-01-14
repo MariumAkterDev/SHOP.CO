@@ -73,7 +73,7 @@ const ProductDetails = () => {
                       <p>0</p>
                       <button>+</button>
                     </div>
-                    <button className='addCartBtn'>Add to Cart</button>
+                    <Link to=''><button className='addCartBtn'>Add to Cart</button></Link>
                   </div>
     
                 </div>

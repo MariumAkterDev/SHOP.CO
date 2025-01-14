@@ -13,6 +13,8 @@ import LayoutTwo from './Layouts/LayoutTwo/LayoutTwo'
 import app from './Firebase.config'
 import { ToastContainer, toast } from 'react-toastify';
 import ProductDetailsPage from './Pages/ProductDetailsPage'
+import Bill from './Components/Bill/Bill'
+import CheckOut from './Pages/CheckOut'
 
 
 
@@ -28,6 +30,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/productdetail' element={<ProductDetailsPage/>} />
           <Route path='/cart' element={<CartPage/>} />
+          <Route path='/checkout' element={<CheckOut/>} />
           <Route path='*' element={<NotFound/>} />
         </Route>
         {/* ------------------LayoutOne---------------------- */}

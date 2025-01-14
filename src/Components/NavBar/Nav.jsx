@@ -7,7 +7,6 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { userData } from "../Slice/userSlice";
-import userIcon from '../../assets/images/userIcon.webp'
 import userIconn from '../../assets/images/userIcon.avif'
 
 const Nav = () => {

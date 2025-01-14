@@ -1,0 +1,111 @@
+
+.main_cart{
+    @apply pb-[66px] md:pb-[100px] w-[85%] md:w-full mx-auto 
+}
+.Cart_details{
+    @apply py-[20px] px-[24px] border-[1px] border-[#F0F0F0] rounded-[20px] overflow-hidden w-[715px] mt-[21px]
+
+}
+.cart_product{
+    @apply flex justify-between items-center gap-[16px]
+}
+/* -------catr img------------ */
+.cart_img{
+    @apply md:w-[124px] w-[70px]
+}
+.cart_text{
+     
+}
+.cart_text h2{
+    @apply font-poppins font-normal md:text-[20px] text-[#000] text-[12px]
+}
+.cart_text h3{
+    @apply font-poppins font-normal text-[14px] text-[#000] mt-[10px] sm:mt-0
+}
+.cart_text span{
+    @apply text-[#8f8f8f]
+}
+.cart_text h4{
+    @apply font-poppins font-normal md:text-[24px] text-[16px] text-[#000]
+}
+.cart_head_text{
+    @apply flex items-center gap-[10px] md:gap-[258px]
+}
+.bin{
+    @apply text-[#FF3333] w-[20px] h-[20px] md:w-[24px] md:h-[24px]
+}
+.cart_count{
+    @apply flex items-center gap-[39px] lg:gap-[346px] mt-[10px] sm:mt-0
+}
+
+.cart_count .count span{
+    @apply text-[20px] text-[#000]   
+}
+/* ---------------order summery----------- */
+.order_summery{
+    @apply py-[20px] px-[24px] border-[1px] border-[#F0F0F0] rounded-[20px] overflow-hidden w-[480px] mt-[21px] h-[470px]
+
+}
+.summery_text h2{
+    @apply font-poppins font-medium text-[18px] md:text-[24px] text-[#000]
+}
+/* --------------subtotal css--------- */
+.summery_text .subtotal{
+    @apply flex justify-between items-center mt-[24px] mb-[20px]
+}
+.summery_text .subtotal h3{
+    @apply font-poppins font-normal md:text-[20px] text-[16px] text-[#949494] 
+}
+.summery_text .subtotal p{
+    @apply  font-poppins font-normal md:text-[20px] text-[16px] text-[#000] 
+}
+/* -----------------Discount  css---------- */
+.summery_text .Discount {
+    @apply flex justify-between items-center mt-[24px] mb-[20px]
+}
+.summery_text .Discount  h3{
+    @apply font-poppins font-normal md:text-[20px] text-[16px] text-[#949494] 
+}
+.summery_text .Discount  p{
+    @apply  font-poppins font-normal md:text-[20px] text-[16px] text-[#FF3333] 
+}
+/* ----------------Delivery css--------- */
+.summery_text .Delivery {
+    @apply flex justify-between items-center mt-[24px] mb-[20px]
+}
+.summery_text .Delivery  h3{
+    @apply font-poppins font-normal md:text-[20px] text-[16px] text-[#949494] 
+}
+.summery_text .Delivery  p{
+    @apply  font-poppins font-bold md:text-[20px] text-[16px] text-[#000] 
+}
+/* --------------total css----------- */
+.summery_text .Total {
+    @apply flex justify-between items-center mt-[24px] mb-[20px]
+}
+.summery_text .Total  h3{
+    @apply font-poppins font-medium text-[18px] md:text-[20px] text-[#000] 
+}
+.summery_text .Total  p{
+    @apply  font-poppins font-normal text-[20px] text-[#000] 
+}
+/* -----------summery_buttons------- */
+.summery_buttons input{
+    @apply py-[5px] outline-none border-[1px] border-brand-Color rounded-[62px] w-[320px] pl-[30px]
+}
+/* -----plasolder---- */
+.summery_buttons{
+    @apply  flex md:justify-between flex-wrap gap-[4px]  justify-center
+}
+/* .Picon{
+    @apply absolute
+} */
+.summery_buttons button{
+    @apply md:py-[12px] py-[7px] md:px-[30px] px-[40px] text-[14px] font-poppins font-normal md:text-[16px] text-[#fff] bg-brand-Color rounded-[62px] mt-[20px] md:mt-0 
+}
+.Checkout_button button{
+    @apply font-poppins font-normal md:font-semibold md:text-[16px] text-[14px] text-[#fff] flex justify-center text-center md:gap-[12px] items-center md:py-[16px] py-[6px] md:px-[135px] px-[40px] m-auto  bg-brand-Color rounded-[62px] md:mt-[24px] mt-[16px] gap-[3px]
+}
+.count .incre_decre{ 
+    @apply  flex items-center gap-[20px] lg:gap-[30px] bg-[#F0F0F0] py-[2px] sm:py-[10px] md:py-[14px] px-[10px] lg:py-[14px] lg:px-[40px]   rounded-[62px] text-[16px] font-poppins font-medium text-[#000] 
+}
