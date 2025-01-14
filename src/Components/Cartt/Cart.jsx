@@ -5,14 +5,12 @@ import { RiDeleteBin6Fill } from 'react-icons/ri'
 import { GoTag } from 'react-icons/go'
 import { FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
 
 const Cart = () => {
 
-  const count = useSelector(state => state.count.value)
-  const dispatch = useDispatch()
+ 
 
-  console.log(count)
+  
 
   return (
     <section>
@@ -36,9 +34,31 @@ const Cart = () => {
                     <h4>$145</h4>
                     <div className='count'>
                       <div className="incre_decre">
-                        <button>-</button>
+                        <button >-</button>
                         <p>0</p>
-                        <button>+</button>
+                        <button >+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr className='mt-[24px] mb-[24px]' />
+              <div className="cart_product">
+                <div className="cart_img"><img src={cart1} alt="" /></div>
+                <div className="cart_text">
+                  <div className="cart_head_text">
+                    <h2>Gradient Graphic T-shirt</h2>
+                    <RiDeleteBin6Fill className='bin  cursor-pointer' />
+                  </div>
+                  <h3>Size: <span>Large</span></h3>
+                  <h3>Color: <span>White</span></h3>
+                  <div className="cart_count">
+                    <h4>$145</h4>
+                    <div className='count'>
+                      <div className="incre_decre">
+                        <button  >-</button>
+                        <p>0</p>
+                        <button  >+</button>
                       </div>
                     </div>
                   </div>
@@ -61,28 +81,6 @@ const Cart = () => {
                         <button>-</button>
                         <p>0</p>
                         <button>+</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className='mt-[24px] mb-[24px]' />
-              <div className="cart_product">
-                <div className="cart_img"><img src={cart1} alt="" /></div>
-                <div className="cart_text">
-                  <div className="cart_head_text">
-                    <h2>Gradient Graphic T-shirt</h2>
-                    <RiDeleteBin6Fill className='bin  cursor-pointer' />
-                  </div>
-                  <h3>Size: <span>Large</span></h3>
-                  <h3>Color: <span>White</span></h3>
-                  <div className="cart_count">
-                    <h4>$145</h4>
-                    <div className='count'>
-                      <div className="incre_decre">
-                        <button  onClick={() => dispatch(decrement())} >-</button>
-                        <p>{count}</p>
-                        <button onClick={() => dispatch(increment())} >+</button>
                       </div>
                     </div>
                   </div>

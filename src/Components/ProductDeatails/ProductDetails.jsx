@@ -13,8 +13,16 @@ import product3 from '../../assets/images/prodt3.png'
 import product4 from '../../assets/images/prodt4.png'
 import CommonBtnOne from '../CommonBtnOne/CommonBtnOne'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { increment,decrement } from '../Slice/userSlice'
+
 
 const ProductDetails = () => {
+
+  const count = useSelector(state => state.count.value)
+  const dispatch = useDispatch()
+
+
     return (
         <section>
           <div className="container">
@@ -70,9 +78,9 @@ const ProductDetails = () => {
                   <div className='line1'></div>
                   <div className="add_button">
                     <div className="incre_decre">
-                      <button>-</button>
-                      <p>0</p>
-                      <button>+</button>
+                      <button onClick={() => dispatch(decrement())}>-</button>
+                      <p>{count}</p>
+                      <button  onClick={() => dispatch(increment())}>+</button>
                     </div>
                     <Link to=''><button className='addCartBtn'>Add to Cart</button></Link>
                   </div>
