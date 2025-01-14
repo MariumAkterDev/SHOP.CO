@@ -6,7 +6,7 @@ const Bill = () => {
   return (
     <>
         <div className="container">
-            <div className="main_bill pt-[50px] pb-[100px]">
+            <div className="main_bill ml-[20px] pt-[50px] pb-[100px]">
                 <div className="Bill_information flex gap-[150px] flex-wrap sm:justify-center">
                     <div className="hum">
                         <h1 className='Title'>Billing details</h1>

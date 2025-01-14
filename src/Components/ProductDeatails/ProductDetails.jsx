@@ -12,6 +12,7 @@ import product2 from '../../assets/images/prodt2.png'
 import product3 from '../../assets/images/prodt3.png'
 import product4 from '../../assets/images/prodt4.png'
 import CommonBtnOne from '../CommonBtnOne/CommonBtnOne'
+import { Link } from 'react-router-dom'
 
 const ProductDetails = () => {
     return (

@@ -6,7 +6,7 @@
     @apply font-poppins font-normal text-[16px] text-[#000]
 }
 .main_info input{
-    @apply outline-none border-[1px]  border-brand-Color rounded-[10px] mt-[22px] pl-[10px] py-[5px] h-[50px] font-poppins font-normal text-[14px] md:w-[453px] w-[300px]
+    @apply outline-none border-[1px]  border-brand-Color rounded-[10px] mt-[10px] md:mt-[15px] pl-[10px] py-[5px] h-[40px] md:h-[50px] font-poppins font-normal text-[14px] md:w-[453px] w-[300px]
 }
 /* -------------Tow------ */
 .Tow{
@@ -20,7 +20,7 @@
     @apply flex justify-between md:gap-[336px] gap-[10px] 
 }
 .main_text h2{
-    @apply font-poppins md:font-medium font-bold md:text-[24px] text-[18px] text-[#000] 
+    @apply font-poppins md:font-medium font-medium md:font-bold md:text-[24px] text-[18px] text-[#000] 
 }
 .main_text2{
     @apply flex md:gap-[311px] mt-[14px] gap-[105px]
@@ -44,14 +44,14 @@
     @apply font-poppins font-normal text-[16px] text-[#000]
 }
 .main_text4 h3{
-    @apply font-poppins font-bold md:text-[24px] text-[20px] text-brand-Color
+    @apply font-poppins font-medium md:font-bold ml-[20px]  text-[18px] md:text-[20px] text-brand-Color
 }
 /* ------------payement methgood----------- */
 .payment_methood {
     @apply mt-[22px]
 }
 .payment_methood h2{
-    @apply font-poppins font-semibold text-[24px] text-[#000]
+    @apply font-poppins font-medium md:font-semibold text-[20px] md:text-[24px] text-[#000]
 }
 .payment_methood .Pm .box1{
     @apply appearance-none w-[20px] h-[20px] border-[2px] border-[#999] rounded-full checked:bg-brand-Color

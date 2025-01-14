@@ -1,6 +1,6 @@
 
 .main_cart{
-    @apply pb-[66px] md:pb-[100px] w-[85%] md:w-full mx-auto 
+    @apply mb-[66px] md:mb-[100px] w-[85%] md:w-full mx-auto 
 }
 .Cart_details{
     @apply py-[20px] px-[24px] border-[1px] border-[#F0F0F0] rounded-[20px] overflow-hidden w-[715px] mt-[21px]
