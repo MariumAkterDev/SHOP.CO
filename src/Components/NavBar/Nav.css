@@ -33,7 +33,7 @@
     @apply flex items-center gap-[15px] text-brand-Color sm:text-[20px] md:text-[25px] relative
 }
 .userIconImg{
-    @apply  w-[17px] h-[17px] sm:w-[22px] sm:h-[22px] lg:w-[30px] lg:h-[30px]
+    @apply  w-[18px] h-[18px] rounded-[50%] sm:w-[22px] sm:h-[22px] lg:w-[30px] lg:h-[30px]
 }
 .shoppingCart{
     @apply bg-brand-Color px-[10px] py-[6px] relative
@@ -51,14 +51,14 @@
     @apply lg:block
 }
 .navAccountPop{
-    @apply  absolute top-[-50px] left-[13px] z-[50] hidden
+    @apply  absolute top-[-47px] right-[-18px] hidden z-[50] 
 }
 .navAccountMain:hover .navAccountPop{
     @apply lg:block
 }
 /* -----------------------------------Nav Cart Badge----------------------------------------- */
 .navCartBadge h6{
-    @apply bg-[#f80c0c] w-[18px] h-[18px] sm:w-[23px] sm:h-[23px] rounded-full flex justify-center items-center text-[#fff] text-[11px] sm:text-[14px] font-poppins font-medium absolute top-[-15px] sm:top-[-21px] left-[13px]
+    @apply bg-[#f80c0c] w-[15px] h-[15px] sm:w-[20px] sm:h-[20px] rounded-full flex justify-center items-center text-[#fff] text-[10px] sm:text-[14px] font-poppins font-normal absolute top-[-12px] sm:top-[-18px] left-[13px]
 }
 /* ----------------------------------------Nav Mobile Bar------------------------------ */
 

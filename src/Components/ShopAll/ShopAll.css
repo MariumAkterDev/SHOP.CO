@@ -1,0 +1,73 @@
+.Main_Shop{
+    @apply flex gap-[24px] pb-[100px]
+}
+.shops_side_bar{
+    @apply mb-[100px]
+}
+/* --------------side bar css-------- */
+.Shop_Side_bar{
+    @apply pt-[9px] px-[24px] border-[1px] border-[#F0F0F0]  h-[982px] w-[295px] bg-[#e9baba] absolute top-[0] left-[0] z-[100]  md:static md:block md:bg-[#f0eaea]
+}
+hr{
+    @apply pt-[0px]
+}
+.filterIcon{
+    @apply  absolute top-[-42px] left-[28px] text-[18px] text-PrimaryColor-62 md:hidden
+}
+.filter{
+    @apply flex justify-between items-center
+}
+.filter .filterH2{
+    @apply font-poppins font-normal text-[20px] text-[#000]
+}
+.filter .Sidebar{
+    @apply w-[24px] h-[24px] text-[#999]
+}
+/* ===========filter catagories------- */
+.Filter_catagories{
+    @apply mt-[26px] flex flex-col gap-[22px]
+}
+.filter_menue{
+    @apply flex justify-between items-center
+}
+.filter_menue .filteMenurH3{
+    @apply font-poppins font-normal text-[16px] text-[#777]
+}
+.check_box{
+    @apply appearance-none h-[18px] w-[18px] rounded-full border-[2px] border-gray-500 checked:bg-[#18443f] cursor-pointer
+}
+/* -----------------size css------------- */
+.Shop_size{
+    @apply mt-[24px]
+}
+.size .sizeH2{
+    @apply font-poppins font-normal text-[20px] text-[#000]
+}
+.size_button{
+    @apply mt-[20px] flex flex-wrap gap-[8px]
+}
+.size_button .sizeBtn{
+    @apply font-poppins font-normal text-[18px] text-[#6b6b6b] py-[10px] px-[20px] bg-[#F0F0F0] rounded-[62px] hover:bg-brand-Color  hover:text-[#fff] transition-all duration-[0.2s]
+}
+/* -----------------dress style---------- */
+.drees_style{
+    @apply mt-[24px]
+}
+.Style_main .styleH2{
+    @apply font-poppins font-normal text-[20px] text-[#000] 
+}
+.Style_catagories{
+    @apply mt-[22px] flex flex-col gap-[20px]
+}
+.Main_filter_button{
+    @apply mt-[24px]
+}
+.Main_filter_button .mainFilterBtn{
+    @apply font-poppins font-normal text-[13px] text-[#fff] py-[15px] px-[86px] bg-brand-Color rounded-[62px]
+}
+/* ---------------------------- */
+/* -------------shop products css---------- */
+.shop_cards{
+    @apply mt-[16px]
+}
+/* -----------single card css----------- */

@@ -9,18 +9,21 @@ const SingleProduct = ({
     latestPrice,
     oldPrice,
     discount,
-    singlePrdctLink
+    singlePrdctLink,
+    productDetail
 }) => {
     return (
         <div className="singProductCard">
             {/* ======================================Card Main Img Portion ========================= */}
             <div className="singProductCard_Img">
-                    <img src={prdctImg} alt="" className="signlPrdctImg"/>
+                    <Link to='/productDetail'><img src={prdctImg} alt="" className="signlPrdctImg" /></Link>
+                <Link to='/productDetail'>
                 <div className="add_cart_div">
                     <button className="addCart_Btn">
                         Add Cart
                     </button>
                 </div>
+                </Link>
             </div>
             {/* ==================================Caard Text Portion ================================= */}
             <Link to={singlePrdctLink}>

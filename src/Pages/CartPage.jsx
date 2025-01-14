@@ -1,8 +1,13 @@
 import React from 'react'
+import Breadcrumb from '../Components/Breadcrumb/Breadcrumb'
+import Cart from '../Components/Cartt/Cart'
 
 const CartPage = () => {
   return (
-    <div>CartPage</div>
+    <>
+      <Breadcrumb/>
+      <Cart/>
+    </>
   )
 }
 

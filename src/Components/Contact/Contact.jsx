@@ -1,9 +1,13 @@
 import React from 'react'
 import './Contact.css'
+import Breadcrumb from '../Breadcrumb/Breadcrumb'
 
 const Contact = () => {
   return (
     <>
+      <div className="container">
+        <Breadcrumb/>
+      </div>
       <div className="contact_us_2">
         <div className="responsive-container-block big-container">
           <div className="blueBG">

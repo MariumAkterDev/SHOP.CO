@@ -1,0 +1,12 @@
+.pagination .active > .page-link {
+    @apply !bg-PrimaryColor-62
+}
+.pagination .page-link {
+    @apply !text-PrimaryColor-62
+}
+.pagination .active > .page-link {
+    @apply !text-[#fff]
+}
+.mainDiv{
+    @apply flex flex-wrap justify-between gap-y-[30px] pb-[50px] mt-[7px] md:mt-[20px] mr-[20px] md:mr-[0]
+}

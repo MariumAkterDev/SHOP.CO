@@ -8,6 +8,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { userData } from "../Slice/userSlice";
 import userIcon from '../../assets/images/userIcon.webp'
+import userIconn from '../../assets/images/userIcon.avif'
 
 const Nav = () => {
   const [show, setShow] = useState(false);
@@ -94,7 +95,7 @@ const Nav = () => {
                   <Link to="/shop">Shop</Link>
                 </li>
                 <li>
-                  <Link to="">New Arrivals</Link>
+                  <Link to="/shop">New Arrivals</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact</Link>
@@ -114,7 +115,7 @@ const Nav = () => {
                   </div>
                 </div>
                 {/* -------------------------------NavCartPopUp Ends------------------------ */}
-                <div className="navCartBadge">
+                <div className={`navCartBadge`}>
                   <h6>0</h6>
                 </div>
               </div>
@@ -140,7 +141,7 @@ const Nav = () => {
                 {/* ${sliceUser.emailVerified ? 'block' : 'hidden'} */}
                 <div className="navAccountMain  flex" onClick={() => setShowLog(!showLog)}>
                   <Link to="" className="navAccountIcon">
-                    <img src={userIcon} alt="" className="userIconImg" />
+                    <img src={userIconn} alt="" className="userIconImg" />
                   </Link>
                   <button className="userAccntDownArrow">
                     <MdKeyboardArrowDown className="" />

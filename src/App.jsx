@@ -10,9 +10,9 @@ import Contact from './Components/Contact/Contact'
 import SignUp from './Components/Sign Up/SignUp'
 import LogIn from './Components/LogIn/LogIn'
 import LayoutTwo from './Layouts/LayoutTwo/LayoutTwo'
-import ProductDetails from './Components/ProductDeatails/ProductDetails'
 import app from './Firebase.config'
 import { ToastContainer, toast } from 'react-toastify';
+import ProductDetailsPage from './Pages/ProductDetailsPage'
 
 
 
@@ -26,7 +26,8 @@ function App() {
           <Route path='/shop' element={<Shop/>} />
           <Route path='/cart' element={<CartPage/>} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='/productdetail' element={<ProductDetails/>} />
+          <Route path='/productdetail' element={<ProductDetailsPage/>} />
+          <Route path='/cart' element={<CartPage/>} />
           <Route path='*' element={<NotFound/>} />
         </Route>
         {/* ------------------LayoutOne---------------------- */}

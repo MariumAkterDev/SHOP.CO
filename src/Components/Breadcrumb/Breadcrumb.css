@@ -1,0 +1,4 @@
+
+.bread_Row ul{
+    @apply  flex items-center gap-[10px] justify-center mb-[20px] 
+}
